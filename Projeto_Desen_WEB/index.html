@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Crítica - Sua plataforma de análises culturais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #6b21a8 0%, #2563eb 100%);
+        }
+        
+        .media-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .review-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tab-active {
+            border-bottom: 3px solid #6b21a8;
+            color: #6b21a8;
+            font-weight: 600;
+        }
+        
+        .rating-stars {
+            color: #f59e0b;
+        }
+        
+        .news-card:hover .news-title {
+            color: #6b21a8;
+        }
+        
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-film text-2xl"></i>
+                    <span class="text-xl font-bold">Central Crítica</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-purple-200 transition">Início</a>
+                    <a href="#movies" class="hover:text-purple-200 transition">Filmes</a>
+                    <a href="#series" class="hover:text-purple-200 transition">Séries</a>
+                    <a href="#music" class="hover:text-purple-200 transition">Música</a>
+                    <a href="#news" class="hover:text-purple-200 transition">Jornal</a>
+                    <a href="#about" class="hover:text-purple-200 transition">Sobre Nós</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden gradient-bg px-4 pb-4">
+            <a href="#home" class="block py-2 hover:text-purple-200 transition">Início</a>
+            <a href="#movies" class="block py-2 hover:text-purple-200 transition">Filmes</a>
+            <a href="#series" class="block py-2 hover:text-purple-200 transition">Séries</a>
+            <a href="#music" class="block py-2 hover:text-purple-200 transition">Música</a>
+            <a href="#news" class="block py-2 hover:text-purple-200 transition">Jornal</a>
+            <a href="#about" class="block py-2 hover:text-purple-200 transition">Sobre Nós</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="gradient-bg text-white py-16">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Descubra, Analise, Compartilhe</h1>
+                        <p class="text-xl mb-6">A plataforma definitiva para críticas de filmes, séries e música. Junte-se à comunidade e compartilhe suas opiniões.</p>
+                        <div class="flex space-x-4">
+                            <button class="bg-white text-purple-800 px-6 py-2 rounded-full font-semibold hover:bg-purple-100 transition">Explorar</button>
+                            <button class="border border-white text-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-purple-800 transition">Cadastre-se</button>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pessoas assistindo filme" class="rounded-lg shadow-xl w-full max-w-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Section -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Em alta esta semana</h2>
+                
+                <div class="flex overflow-x-auto pb-6 space-x-4 scrollbar-hide">
+                    <!-- Trending Movie 1 -->
+                    <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/8Vt6mWRCeMCujQFQqkE3O6zqTdZ.jpg" alt="Oppenheimer" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Oppenheimer</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-600 ml-2">4.5</span>
+                            </div>
+                            <button onclick="showMediaDetails('movie', 'Oppenheimer')" class="text-purple-700 hover:text-purple-900 font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Trending Series 1 -->
+                    <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/9GvhICFMiRQA82vS6ydkXxeEkrd.jpg" alt="The Last of Us" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">The Last of Us</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="text-gray-600 ml-2">4.0</span>
+                            </div>
+                            <button onclick="showMediaDetails('series', 'The Last of Us')" class="text-purple-700 hover:text-purple-900 font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Trending Music 1 -->
+                    <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96" alt="Flowers - Miley Cyrus" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Flowers</h3>
+                            <p class="text-gray-600 text-sm mb-2">Miley Cyrus</p>
+                            <div class="flex items-center mb-2">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="text-gray-600 ml-2">5.0</span>
+                            </div>
+                            <button onclick="showMediaDetails('music', 'Flowers - Miley Cyrus')" class="text-purple-700 hover:text-purple-900 font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Trending Movie 2 -->
+                    <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg" alt="Barbie" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Barbie</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="text-gray-600 ml-2">4.0</span>
+                            </div>
+                            <button onclick="showMediaDetails('movie', 'Barbie')" class="text-purple-700 hover:text-purple-900 font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Trending Series 2 -->
+                    <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/dBxxtfhC4vYrxB2fLsTZUHgq3jK.jpg" alt="Succession" class="w-full h-40 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Succession</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-600 ml-2">4.5</span>
+                            </div>
+                            <button onclick="showMediaDetails('series', 'Succession')" class="text-purple-700 hover:text-purple-900 font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Reviews Section -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Últimas Críticas</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Review 1 -->
+                    <div class="review-card bg-white rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 rounded-full bg-purple-200 flex items-center justify-center text-purple-800 font-bold">JP</div>
+                            <div class="ml-3">
+                                <h4 class="font-semibold">João Pedro</h4>
+                                <p class="text-gray-500 text-sm">Há 2 dias</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="ml-2 font-medium">Oppenheimer</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Nolan mais uma vez mostra sua maestria na direção. A performance de Cillian Murphy é simplesmente brilhante. O filme é intenso do começo ao fim, com uma fotografia impecável e trilha sonora que te deixa em suspense constante.</p>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span><i class="far fa-thumbs-up"></i> 24</span>
+                            <span><i class="far fa-comment"></i> 5</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div class="review-card bg-white rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 rounded-full bg-blue-200 flex items-center justify-center text-blue-800 font-bold">AM</div>
+                            <div class="ml-3">
+                                <h4 class="font-semibold">Ana Maria</h4>
+                                <p class="text-gray-500 text-sm">Há 5 dias</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="ml-2 font-medium">Flowers - Miley Cyrus</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Que hino de empoderamento! Miley está no auge de sua carreira. A letra é inteligente, a melodia cativante e o clipe é uma obra de arte. Não consigo parar de ouvir no repeat. Certamente uma das melhores músicas do ano!</p>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span><i class="far fa-thumbs-up"></i> 18</span>
+                            <span><i class="far fa-comment"></i> 3</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 3 -->
+                    <div class="review-card bg-white rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 rounded-full bg-green-200 flex items-center justify-center text-green-800 font-bold">CR</div>
+                            <div class="ml-3">
+                                <h4 class="font-semibold">Carlos Roberto</h4>
+                                <p class="text-gray-500 text-sm">Há 1 semana</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="ml-2 font-medium">The Last of Us</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">A adaptação superou minhas expectativas. Pedro Pascal e Bella Ramsey têm uma química incrível. A série consegue capturar a essência do jogo enquanto traz novas camadas narrativas. Os episódios 3 e 5 são obras-primas da televisão.</p>
+                        <div class="flex justify-between text-sm text-gray-500">
+                            <span><i class="far fa-thumbs-up"></i> 32</span>
+                            <span><i class="far fa-comment"></i> 8</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <button class="bg-purple-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-800 transition">Ver mais críticas</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Sections (Movies, Series, Music) -->
+        <section id="movies" class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-3xl font-bold">Filmes</h2>
+                    <a href="#" class="text-purple-700 hover:text-purple-900 font-medium">Ver todos</a>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <!-- Movie 1 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/8Vt6mWRCeMCujQFQqkE3O6zqTdZ.jpg" alt="Oppenheimer" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Oppenheimer</h3>
+                            <p class="text-gray-600 text-sm mb-2">2023 • 3h</p>
+                            <button onclick="showMediaDetails('movie', 'Oppenheimer')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Movie 2 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg" alt="Barbie" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Barbie</h3>
+                            <p class="text-gray-600 text-sm mb-2">2023 • 1h54m</p>
+                            <button onclick="showMediaDetails('movie', 'Barbie')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Movie 3 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Duna" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Duna</h3>
+                            <p class="text-gray-600 text-sm mb-2">2021 • 2h35m</p>
+                            <button onclick="showMediaDetails('movie', 'Duna')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Movie 4 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/1X7vow16X7CnQu9SIB5usFkKVPX.jpg" alt="Interestelar" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Interestelar</h3>
+                            <p class="text-gray-600 text-sm mb-2">2014 • 2h49m</p>
+                            <button onclick="showMediaDetails('movie', 'Interestelar')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Movie 5 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Parasita" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Parasita</h3>
+                            <p class="text-gray-600 text-sm mb-2">2019 • 2h12m</p>
+                            <button onclick="showMediaDetails('movie', 'Parasita')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="series" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-3xl font-bold">Séries</h2>
+                    <a href="#" class="text-purple-700 hover:text-purple-900 font-medium">Ver todas</a>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <!-- Series 1 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/9GvhICFMiRQA82vS6ydkXxeEkrd.jpg" alt="The Last of Us" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">The Last of Us</h3>
+                            <p class="text-gray-600 text-sm mb-2">2023 • 1 temporada</p>
+                            <button onclick="showMediaDetails('series', 'The Last of Us')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Series 2 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/dBxxtfhC4vYrxB2fLsTZUHgq3jK.jpg" alt="Succession" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Succession</h3>
+                            <p class="text-gray-600 text-sm mb-2">2018 • 4 temporadas</p>
+                            <button onclick="showMediaDetails('series', 'Succession')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Series 3 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/7Md3nuV0ZprBTnkdR3OrUCEsrSP.jpg" alt="The Bear" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">The Bear</h3>
+                            <p class="text-gray-600 text-sm mb-2">2022 • 2 temporadas</p>
+                            <button onclick="showMediaDetails('series', 'The Bear')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Series 4 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg" alt="Breaking Bad" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Breaking Bad</h3>
+                            <p class="text-gray-600 text-sm mb-2">2008 • 5 temporadas</p>
+                            <button onclick="showMediaDetails('series', 'Breaking Bad')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Series 5 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/6kbAMLteGO8yyewYau6bJ683sw7.jpg" alt="Stranger Things" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Stranger Things</h3>
+                            <p class="text-gray-600 text-sm mb-2">2016 • 4 temporadas</p>
+                            <button onclick="showMediaDetails('series', 'Stranger Things')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="music" class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-3xl font-bold">Música</h2>
+                    <a href="#" class="text-purple-700 hover:text-purple-900 font-medium">Ver todas</a>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <!-- Music 1 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96" alt="Flowers - Miley Cyrus" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Flowers</h3>
+                            <p class="text-gray-600 text-sm mb-2">Miley Cyrus • 2023</p>
+                            <button onclick="showMediaDetails('music', 'Flowers - Miley Cyrus')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Music 2 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02a435d5c3c1fb1e94b4e9a27d" alt="Kill Bill - SZA" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Kill Bill</h3>
+                            <p class="text-gray-600 text-sm mb-2">SZA • 2022</p>
+                            <button onclick="showMediaDetails('music', 'Kill Bill - SZA')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Music 3 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02e0b60c608586d88251b6a1f0" alt="Anti-Hero - Taylor Swift" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Anti-Hero</h3>
+                            <p class="text-gray-600 text-sm mb-2">Taylor Swift • 2022</p>
+                            <button onclick="showMediaDetails('music', 'Anti-Hero - Taylor Swift')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Music 4 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02d4d08aab6e7a013b77de66fa" alt="As It Was - Harry Styles" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">As It Was</h3>
+                            <p class="text-gray-600 text-sm mb-2">Harry Styles • 2022</p>
+                            <button onclick="showMediaDetails('music', 'As It Was - Harry Styles')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Music 5 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02b598d3a9d5a9a3f5aaf8b8a7" alt="Blinding Lights - The Weeknd" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Blinding Lights</h3>
+                            <p class="text-gray-600 text-sm mb-2">The Weeknd • 2020</p>
+                            <button onclick="showMediaDetails('music', 'Blinding Lights - The Weeknd')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Jornal Cultural</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- News 1 -->
+                    <div class="news-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1486578077620-8a022ddd481f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Oscar 2023" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="text-purple-700 text-sm font-semibold">Cinema</span>
+                            <h3 class="news-title text-xl font-bold mt-2 mb-3 transition duration-300">Oscar 2023: Análise dos principais vencedores e destaques</h3>
+                            <p class="text-gray-600 mb-4">Uma análise profunda dos filmes premiados no Oscar deste ano, com insights sobre as tendências da indústria cinematográfica.</p>
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="text-gray-500">15/03/2023</span>
+                                <a href="#" class="text-purple-700 font-medium hover:text-purple-900">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- News 2 -->
+                    <div class="news-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1413&q=80" alt="Streaming" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="text-blue-700 text-sm font-semibold">Séries</span>
+                            <h3 class="news-title text-xl font-bold mt-2 mb-3 transition duration-300">O impacto das plataformas de streaming na produção de séries</h3>
+                            <p class="text-gray-600 mb-4">Como a guerra entre streaming está moldando o futuro das séries de TV e quais as consequências para a qualidade do conteúdo.</p>
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="text-gray-500">28/02/2023</span>
+                                <a href="#" class="text-purple-700 font-medium hover:text-purple-900">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- News 3 -->
+                    <div class="news-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Música" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="text-green-700 text-sm font-semibold">Música</span>
+                            <h3 class="news-title text-xl font-bold mt-2 mb-3 transition duration-300">O renascimento do pop dos anos 2000: por que essas músicas estão voltando?</h3>
+                            <p class="text-gray-600 mb-4">Analisamos o fenômeno da nostalgia musical e como artistas estão revisitando o som dos anos 2000 com sucesso.</p>
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="text-gray-500">10/02/2023</span>
+                                <a href="#" class="text-purple-700 font-medium hover:text-purple-900">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <button class="bg-purple-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-800 transition">Ver mais artigos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-6">Sobre Nós</h2>
+                    <p class="text-lg text-gray-700 mb-8">
+                        A Central Crítica nasceu da paixão por cultura e da necessidade de um espaço onde amantes de cinema, séries e música pudessem compartilhar suas opiniões de forma construtiva. Nosso objetivo é criar uma comunidade engajada que discuta obras culturais com profundidade e respeito, indo além do simples "gostei" ou "não gostei".
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <i class="fas fa-film text-4xl text-purple-700 mb-4"></i>
+                            <h3 class="font-bold text-xl mb-2">Missão</h3>
+                            <p class="text-gray-600">Promover discussões ricas e análises profundas sobre produções culturais, elevando o nível do debate crítico.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <i class="fas fa-users text-4xl text-purple-700 mb-4"></i>
+                            <h3 class="font-bold text-xl mb-2">Visão</h3>
+                            <p class="text-gray-600">Ser a principal referência em críticas culturais colaborativas no Brasil até 2025.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <i class="fas fa-heart text-4xl text-purple-700 mb-4"></i>
+                            <h3 class="font-bold text-xl mb-2">Valores</h3>
+                            <p class="text-gray-600">Respeito às diferenças, paixão pela cultura, rigor analítico e incentivo à diversidade de vozes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Details Modal -->
+        <div id="mediaModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden overflow-y-auto">
+            <div class="container mx-auto px-4 py-12">
+                <div class="bg-white rounded-lg shadow-xl max-w-4xl mx-auto">
+                    <div class="flex justify-between items-center border-b px-6 py-4">
+                        <h3 id="mediaModalTitle" class="text-xl font-bold"></h3>
+                        <button onclick="closeMediaModal()" class="text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div id="mediaModalContent" class="p-6">
+                        <!-- Content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-film text-2xl"></i>
+                        <span class="text-xl font-bold">Central Crítica</span>
+                    </div>
+                    <p class="text-purple-200">Sua plataforma de análises culturais. Descubra, analise e compartilhe.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Navegação</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-purple-200 transition">Início</a></li>
+                        <li><a href="#movies" class="hover:text-purple-200 transition">Filmes</a></li>
+                        <li><a href="#series" class="hover:text-purple-200 transition">Séries</a></li>
+                        <li><a href="#music" class="hover:text-purple-200 transition">Música</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Informações</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#news" class="hover:text-purple-200 transition">Jornal</a></li>
+                        <li><a href="#about" class="hover:text-purple-200 transition">Sobre Nós</a></li>
+                        <li><a href="#" class="hover:text-purple-200 transition">Termos de Uso</a></li>
+                        <li><a href="#" class="hover:text-purple-200 transition">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contato</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="hover:text-purple-200 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-purple-200 transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-purple-200 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-purple-200 transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="text-purple-200">contato@centralcritica.com</p>
+                </div>
+            </div>
+            <div class="border-t border-purple-400 mt-8 pt-6 text-center text-purple-200">
+                <p>&copy; 2023 Central Crítica. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Media details data
+        const mediaData = {
+            'movie': {
+                'Oppenheimer': {
+                    title: 'Oppenheimer',
+                    type: 'Filme',
+                    year: '2023',
+                    duration: '3h',
+                    director: 'Christopher Nolan',
+                    cast: 'Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr.',
+                    synopsis: 'O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.',
+                    cover: 'https://image.tmdb.org/t/p/w500/8Vt6mWRCeMCujQFQqkE3O6zqTdZ.jpg',
+                    audienceRating: '4.5',
+                    criticRating: '4.8',
+                    reviews: [
+                        {user: 'Carlos Silva', rating: 5, comment: 'Nolan no seu ápice. A performance de Cillian Murphy é de tirar o fôlego.', date: '2 dias atrás'},
+                        {user: 'Ana Paula', rating: 4, comment: 'Fotografia e trilha sonora incríveis, mas o ritmo poderia ser mais dinâmico em alguns momentos.', date: '1 semana atrás'},
+                        {user: 'Roberto Almeida', rating: 5, comment: 'Um filme que fica na mente por dias. A cena da explosão é cinematograficamente perfeita.', date: '3 dias atrás'}
+                    ]
+                },
+                'Barbie': {
+                    title: 'Barbie',
+                    type: 'Filme',
+                    year: '2023',
+                    duration: '1h54m',
+                    director: 'Greta Gerwig',
+                    cast: 'Margot Robbie, Ryan Gosling, America Ferrera, Kate McKinnon',
+                    synopsis: 'Barbie começa a ter pensamentos existenciais e viaja para o mundo real para encontrar verdadeira felicidade.',
+                    cover: 'https://image.tmdb.org/t/p/w500/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg',
+                    audienceRating: '4.0',
+                    criticRating: '4.2',
+                    reviews: [
+                        {user: 'Juliana Costa', rating: 5, comment: 'Divertido, inteligente e visualmente deslumbrante. Margot Robbie é perfeita como Barbie!', date: '1 dia atrás'},
+                        {user: 'Marcos Vinicius', rating: 3, comment: 'Bom filme, mas esperava mais profundidade na crítica social.', date: '5 dias atrás'},
+                        {user: 'Fernanda Lima', rating: 4, comment: 'Ryan Gosling rouba a cena como Ken. O filme equilibra bem comédia e mensagem.', date: '3 dias atrás'}
+                    ]
+                }
+            },
+            'series': {
+                'The Last of Us': {
+                    title: 'The Last of Us',
+                    type: 'Série',
+                    year: '2023',
+                    seasons: '1 temporada',
+                    episodes: '9 episódios',
+                    creators: 'Craig Mazin, Neil Druckmann',
+                    cast: 'Pedro Pascal, Bella Ramsey, Gabriel Luna',
+                    synopsis: 'Vinte anos após a destruição da civilização moderna, Joel é contratado para contrabandear Ellie, uma menina de 14 anos, para fora de uma zona de quarentena opressiva. O que começa como um pequeno trabalho logo se torna uma jornada brutal e de partir o coração.',
+                    cover: 'https://image.tmdb.org/t/p/w500/9GvhICFMiRQA82vS6ydkXxeEkrd.jpg',
+                    audienceRating: '4.5',
+                    criticRating: '4.7',
+                    reviews: [
+                        {user: 'Tiago Mendes', rating: 5, comment: 'A melhor adaptação de videogame já feita. Fiel ao espírito do jogo mas com novas camadas narrativas.', date: '2 dias atrás'},
+                        {user: 'Patricia Souza', rating: 5, comment: 'O episódio 3 é uma das coisas mais lindas já feitas para TV. Choramos muito.', date: '1 semana atrás'},
+                        {user: 'Rafael Gonçalves', rating: 4, comment: 'Excelente série, mas alguns momentos do jogo foram perdidos na adaptação.', date: '4 dias atrás'}
+                    ]
+                },
+                'Succession': {
+                    title: 'Succession',
+                    type: 'Série',
+                    year: '2018-2023',
+                    seasons: '4 temporadas',
+                    episodes: '39 episódios',
+                    creators: 'Jesse Armstrong',
+                    cast: 'Brian Cox, Jeremy Strong, Sarah Snook, Kieran Culkin',
+                    synopsis: 'A série acompanha os Roy, uma família disfuncional que controla um dos maiores conglomerados de mídia e entretenimento do mundo. A trama explora temas de poder, família e lealdade enquanto os filhos do patriarca Logan Roy competem pelo controle da empresa.',
+                    cover: 'https://image.tmdb.org/t/p/w500/dBxxtfhC4vYrxB2fLsTZUHgq3jK.jpg',
+                    audienceRating: '4.5',
+                    criticRating: '4.9',
+                    reviews: [
+                        {user: 'Luiza Fernandes', rating: 5, comment: 'O diálogo mais afiado da TV atual. Cada personagem é complexo e fascinante.', date: '3 dias atrás'},
+                        {user: 'Gustavo Henrique', rating: 5, comment: 'A temporada final foi perfeita. Um final digno dessa obra-prima.', date: '1 semana atrás'},
+                        {user: 'Camila Rocha', rating: 4, comment: 'Demorei a engrenar, mas quando peguei o ritmo, viciei completamente.', date: '2 semanas atrás'}
+                    ]
+                }
+            },
+            'music': {
+                'Flowers - Miley Cyrus': {
+                    title: 'Flowers',
+                    artist: 'Miley Cyrus',
+                    type: 'Música',
+                    year: '2023',
+                    album: 'Endless Summer Vacation',
+                    duration: '3:20',
+                    genre: 'Pop, Disco',
+                    synopsis: '"Flowers" é uma música de empoderamento sobre superar um término e encontrar a felicidade em si mesma. A faixa apresenta influências disco e pop dos anos 70/80, com letras que celebram a auto-suficiência.',
+                    cover: 'https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96',
+                    audienceRating: '4.8',
+                    criticRating: '4.5',
+                    reviews: [
+                        {user: 'Mariana Santos', rating: 5, comment: 'Hino de auto-estima! Miley nunca esteve tão bem. A batida é viciante.', date: '1 dia atrás'},
+                        {user: 'Rodrigo Martins', rating: 4, comment: 'Ótima música, mas esperava algo mais ousado depois de Plastic Hearts.', date: '3 dias atrás'},
+                        {user: 'Isabela Cardoso', rating: 5, comment: 'Não consigo parar de ouvir! A letra é perfeita para quem está se recuperando de um término.', date: '1 semana atrás'}
+                    ]
+                },
+                'Kill Bill - SZA': {
+                    title: 'Kill Bill',
+                    artist: 'SZA',
+                    type: 'Música',
+                    year: '2022',
+                    album: 'SOS',
+                    duration: '2:33',
+                    genre: 'R&B, Pop',
+                    synopsis: 'Inspirada no filme de Quentin Tarantino, "Kill Bill" explora temas de ciúme, obsessão e vingança em um relacionamento terminado. A faixa combina o estilo único de R&B de SZA com uma produção minimalista e letras impactantes.',
+                    cover: 'https://i.scdn.co/image/ab67616d00001e02a435d5c3c1fb1e94b4e9a27d',
+                    audienceRating: '4.7',
+                    criticRating: '4.6',
+                    reviews: [
+                        {user: 'Bruno Oliveira', rating: 5, comment: 'SZA nunca erra. Essa música é a combinação perfeita de letra inteligente e batida cativante.', date: '2 dias atrás'},
+                        {user: 'Carla Mendonça', rating: 4, comment: 'Adoro a vibe da música, mas acho que poderia ser um pouco mais longa.', date: '5 dias atrás'},
+                        {user: 'Diego Ramos', rating: 5, comment: 'A referência ao filme é genial. SZA transformou uma cena violenta em uma metáfora emocional poderosa.', date: '1 semana atrás'}
+                    ]
+                }
+            }
+        };
+
+        // Show media details modal
+        function showMediaDetails(type, title) {
+            const modal = document.getElementById('mediaModal');
+            const modalTitle = document.getElementById('mediaModalTitle');
+            const modalContent = document.getElementById('mediaModalContent');
+            
+            modalTitle.textContent = title;
+            
+            const media = mediaData[type][title];
+            
+            let content = `
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/3">
+                        <img src="${media.cover}" alt="${title}" class="w-full rounded-lg shadow-md">
+                        <div class="mt-4 bg-gray-50 p-4 rounded-lg">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-semibold">Avaliação do público:</span>
+                                <div class="flex items-center">
+                                    <div class="rating-stars">
+                                        ${generateStars(media.audienceRating)}
+                                    </div>
+                                    <span class="ml-2">${media.audienceRating}</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold">Avaliação da crítica:</span>
+                                <div class="flex items-center">
+                                    <div class="rating-stars">
+                                        ${generateStars(media.criticRating)}
+                                    </div>
+                                    <span class="ml-2">${media.criticRating}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h4 class="text-lg font-semibold mb-2">Sinopse</h4>
+                        <p class="text-gray-700 mb-4">${media.synopsis}</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+            `;
+            
+            if (type === 'movie') {
+                content += `
+                            <div>
+                                <h5 class="font-semibold">Diretor</h5>
+                                <p>${media.director}</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold">Elenco</h5>
+                                <p>${media.cast}</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold">Ano</h5>
+                                <p>${media.year}</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold">Duração</h5>
+                                <p>${media.duration}</p>
+                            </div>
+                `;
+            } else if (type === 'series') {
+                content += `
+                            <div>
+                                <h5 class="font-semibold">Criadores</h5>
+                                <p>${media.creators}</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold">Elenco</h5>
+                                <p>${media.cast}</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold">Temporadas</h5>
+                                <p>${media.seasons}</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold">Episódios</h5>
+                                <p>${media.episodes}</p>
+                            </div>
+                `;
+            } else if (type === 'music') {
+                content += `
+                            <div>
+                                <h5 class="font-semibold">Artista</h5>
+                                <p>${media.artist}</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold">Álbum</h5>
+                                <p>${media.album}</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold">Gênero</h5>
+                                <p>${media.genre}</p>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold">Duração</h5>
+                                <p>${media.duration}</p>
+                            </div>
+                `;
+            }
+            
+            content += `
+                        </div>
+                        
+                        <div class="border-t pt-6">
+                            <h4 class="text-lg font-semibold mb-4">Críticas</h4>
+                            <div class="space-y-4">
+            `;
+            
+            media.reviews.forEach(review => {
+                content += `
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <div>
+                                            <h5 class="font-semibold">${review.user}</h5>
+                                            <p class="text-sm text-gray-500">${review.date}</p>
+                                        </div>
+                                        <div class="rating-stars">
+                                            ${generateStars(review.rating)}
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-700">${review.comment}</p>
+                                </div>
+                `;
+            });
+            
+            content += `
+                            </div>
+                            
+                            <div class="mt-6">
+                                <h4 class="text-lg font-semibold mb-4">Deixe sua crítica</h4>
+                                <form>
+                                    <div class="mb-4">
+                                        <label class="block text-gray-700 mb-2">Sua avaliação</label>
+                                        <div class="rating-stars text-2xl mb-2" id="userRating">
+                                            <i class="far fa-star cursor-pointer" data-rating="1"></i>
+                                            <i class="far fa-star cursor-pointer" data-rating="2"></i>
+                                            <i class="far fa-star cursor-pointer" data-rating="3"></i>
+                                            <i class="far fa-star cursor-pointer" data-rating="4"></i>
+                                            <i class="far fa-star cursor-pointer" data-rating="5"></i>
+                                        </div>
+                                        <input type="hidden" id="selectedRating" value="0">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="reviewText" class="block text-gray-700 mb-2">Seu comentário</label>
+                                        <textarea id="reviewText" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600"></textarea>
+                                    </div>
+                                    <button type="button" onclick="submitReview('${type}', '${title}')" class="bg-purple-700 text-white px-4 py-2 rounded-md hover:bg-purple-800 transition">Enviar crítica</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            modalContent.innerHTML = content;
+            
+            // Add star rating interaction
+            const stars = modalContent.querySelectorAll('#userRating .fa-star');
+            stars.forEach(star => {
+                star.addEventListener('click', function() {
+                    const rating = parseInt(this.getAttribute('data-rating'));
+                    document.getElementById('selectedRating').value = rating;
+                    
+                    stars.forEach((s, index) => {
+                        if (index < rating) {
+                            s.classList.remove('far');
+                            s.classList.add('fas');
+                        } else {
+                            s.classList.remove('fas');
+                            s.classList.add('far');
+                        }
+                    });
+                });
+            });
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Generate star rating HTML
+        function generateStars(rating) {
+            let stars = '';
+            const fullStars = Math.floor(rating);
+            const hasHalfStar = rating % 1 >= 0.5;
+            
+            for (let i = 1; i <= 5; i++) {
+                if (i <= fullStars) {
+                    stars += '<i class="fas fa-star"></i>';
+                } else if (i === fullStars + 1 && hasHalfStar) {
+                    stars += '<i class="fas fa-star-half-alt"></i>';
+                } else {
+                    stars += '<i class="far fa-star"></i>';
+                }
+            }
+            
+            return stars;
+        }
+        
+        // Close media modal
+        function closeMediaModal() {
+            const modal = document.getElementById('mediaModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Submit review
+        function submitReview(type, title) {
+            const rating = document.getElementById('selectedRating').value;
+            const comment = document.getElementById('reviewText').value;
+            
+            if (rating === '0') {
+                alert('Por favor, selecione uma avaliação com as estrelas.');
+                return;
+            }
+            
+            if (!comment.trim()) {
+                alert('Por favor, escreva seu comentário antes de enviar.');
+                return;
+            }
+            
+            // In a real app, you would send this data to a server
+            alert(`Obrigado por sua crítica! Avaliação: ${rating} estrelas\nComentário: ${comment}`);
+            
+            // Reset form
+            document.getElementById('selectedRating').value = '0';
+            document.getElementById('reviewText').value = '';
+            
+            const stars = document.querySelectorAll('#userRating .fa-star');
+            stars.forEach(star => {
+                star.classList.remove('fas');
+                star.classList.add('far');
+            });
+            
+            // Simulate adding the review to the list
+            const media = mediaData[type][title];
+            const newReview = {
+                user: 'Você',
+                rating: parseInt(rating),
+                comment: comment,
+                date: 'Agora mesmo'
+            };
+            
+            media.reviews.unshift(newReview);
+            
+            // Update the modal content
+            showMediaDetails(type, title);
+        }
+    </script>
+</body>
+</html>
