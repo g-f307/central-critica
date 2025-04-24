@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Séries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-film text-2xl"></i>
+                    <span class="text-xl font-bold">Central Crítica</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="../index.html" class="hover:text-purple-200 transition">Início</a>
+                    <a href="./filmes.html" class="hover:text-purple-200 transition">Filmes</a>
+                    <a href="./series.html" class="hover:text-purple-200 transition">Séries</a>
+                    <a href="./musicas.html" class="hover:text-purple-200 transition">Música</a>
+                    <a href="./jornal.html" class="hover:text-purple-200 transition">Jornal</a>
+                    <a href="./sobre.html" class="hover:text-purple-200 transition">Sobre Nós</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden gradient-bg px-4 pb-4">
+            <a href="../index.html" class="block py-2 hover:text-purple-200 transition">Início</a>
+            <a href="./filmes.html" class="block py-2 hover:text-purple-200 transition">Filmes</a>
+            <a href="./series.html" class="block py-2 hover:text-purple-200 transition">Séries</a>
+            <a href="./musicas.html" class="block py-2 hover:text-purple-200 transition">Música</a>
+            <a href="./jornal.html" class="block py-2 hover:text-purple-200 transition">Jornal</a>
+            <a href="./sobre.html" class="block py-2 hover:text-purple-200 transition">Sobre Nós</a>
+        </div>
+    </nav>
+    <main>
+        <section id="series" class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-3xl font-bold">Séries</h2>
+                    <a href="#" class="text-purple-700 hover:text-purple-900 font-medium">Ver todas</a>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <!-- Series 1 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/1Wtfucko1wQBAN4rJbRnqA6kqQQ.jpg" alt="The Last of Us" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">The Last of Us</h3>
+                            <p class="text-gray-600 text-sm mb-2">2023 • 1 temporada</p>
+                            <button onclick="showMediaDetails('series', 'The Last of Us')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Series 2 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/z0XiwdrCQ9yVIr4O0pxzaAYRxdW.jpg" alt="Succession" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Succession</h3>
+                            <p class="text-gray-600 text-sm mb-2">2018 • 4 temporadas</p>
+                            <button onclick="showMediaDetails('series', 'Succession')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Series 3 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/oG4Zv3ioI3N3enFHCGeZDpYpRBQ.jpg" alt="The Bear" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">The Bear</h3>
+                            <p class="text-gray-600 text-sm mb-2">2022 • 2 temporadas</p>
+                            <button onclick="showMediaDetails('series', 'The Bear')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Series 4 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg" alt="Breaking Bad" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Breaking Bad</h3>
+                            <p class="text-gray-600 text-sm mb-2">2008 • 5 temporadas</p>
+                            <button onclick="showMediaDetails('series', 'Breaking Bad')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Series 5 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <img src="https://image.tmdb.org/t/p/w500/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg" alt="Stranger Things" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-1">Stranger Things</h3>
+                            <p class="text-gray-600 text-sm mb-2">2016 • 4 temporadas</p>
+                            <button onclick="showMediaDetails('series', 'Stranger Things')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-film text-2xl"></i>
+                        <span class="text-xl font-bold">Central Crítica</span>
+                    </div>
+                    <p class="text-purple-200">Sua plataforma de análises culturais. Descubra, analise e compartilhe.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Navegação</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-purple-200 transition">Início</a></li>
+                        <li><a href="#movies" class="hover:text-purple-200 transition">Filmes</a></li>
+                        <li><a href="#series" class="hover:text-purple-200 transition">Séries</a></li>
+                        <li><a href="#music" class="hover:text-purple-200 transition">Música</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Informações</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#news" class="hover:text-purple-200 transition">Jornal</a></li>
+                        <li><a href="#about" class="hover:text-purple-200 transition">Sobre Nós</a></li>
+                        <li><a href="#" class="hover:text-purple-200 transition">Termos de Uso</a></li>
+                        <li><a href="#" class="hover:text-purple-200 transition">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contato</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="hover:text-purple-200 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-purple-200 transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-purple-200 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-purple-200 transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="text-purple-200">contato@centralcritica.com</p>
+                </div>
+            </div>
+            <div class="border-t border-purple-400 mt-8 pt-6 text-center text-purple-200">
+                <p>&copy; 2025 Central Crítica. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src = "../js/script.js"></script>
+</body>
+</html>

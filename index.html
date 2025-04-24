@@ -6,7 +6,7 @@
     <title>Central Crítica - Sua plataforma de análises culturais</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -18,12 +18,12 @@
                     <span class="text-xl font-bold">Central Crítica</span>
                 </div>
                 <div class="hidden md:flex space-x-6">
-                    <a href="#home" class="hover:text-purple-200 transition">Início</a>
-                    <a href="#movies" class="hover:text-purple-200 transition">Filmes</a>
-                    <a href="#series" class="hover:text-purple-200 transition">Séries</a>
-                    <a href="#music" class="hover:text-purple-200 transition">Música</a>
-                    <a href="#news" class="hover:text-purple-200 transition">Jornal</a>
-                    <a href="#about" class="hover:text-purple-200 transition">Sobre Nós</a>
+                    <a href="./index.html" class="hover:text-purple-200 transition">Início</a>
+                    <a href="./public/filmes.html" class="hover:text-purple-200 transition">Filmes</a>
+                    <a href="./public/series.html" class="hover:text-purple-200 transition">Séries</a>
+                    <a href="./public/musicas.html" class="hover:text-purple-200 transition">Música</a>
+                    <a href="./public/jornal.html" class="hover:text-purple-200 transition">Jornal</a>
+                    <a href="./public/sobre.html" class="hover:text-purple-200 transition">Sobre Nós</a>
                 </div>
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-white focus:outline-none">
@@ -34,12 +34,12 @@
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden gradient-bg px-4 pb-4">
-            <a href="#home" class="block py-2 hover:text-purple-200 transition">Início</a>
-            <a href="#movies" class="block py-2 hover:text-purple-200 transition">Filmes</a>
-            <a href="#series" class="block py-2 hover:text-purple-200 transition">Séries</a>
-            <a href="#music" class="block py-2 hover:text-purple-200 transition">Música</a>
-            <a href="#news" class="block py-2 hover:text-purple-200 transition">Jornal</a>
-            <a href="#about" class="block py-2 hover:text-purple-200 transition">Sobre Nós</a>
+            <a href="./index.html" class="block py-2 hover:text-purple-200 transition">Início</a>
+            <a href="./public/filmes.html" class="block py-2 hover:text-purple-200 transition">Filmes</a>
+            <a href="./public/series.html" class="block py-2 hover:text-purple-200 transition">Séries</a>
+            <a href="./public/musicas.html" class="block py-2 hover:text-purple-200 transition">Música</a>
+            <a href="./public/jornal.html" class="block py-2 hover:text-purple-200 transition">Jornal</a>
+            <a href="./public/sobre.html" class="block py-2 hover:text-purple-200 transition">Sobre Nós</a>
         </div>
     </nav>
 
@@ -72,7 +72,7 @@
                 <div class="flex overflow-x-auto pb-6 space-x-4 scrollbar-hide">
                     <!-- Trending Movie 1 -->
                     <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/8Vt6mWRCeMCujQFQqkE3O6zqTdZ.jpg" alt="Oppenheimer" class="w-full h-40 object-cover">
+                        <img src="https://image.tmdb.org/t/p/w500/1OsQJEoSXBjduuCvDOlRhoEUaHu.jpg" alt="Oppenheimer" class="w-full h-40 object-cover">
                         <div class="p-4">
                             <h3 class="font-semibold text-lg mb-1">Oppenheimer</h3>
                             <div class="flex items-center mb-2">
@@ -91,7 +91,7 @@
                     
                     <!-- Trending Series 1 -->
                     <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/9GvhICFMiRQA82vS6ydkXxeEkrd.jpg" alt="The Last of Us" class="w-full h-40 object-cover">
+                        <img src="https://image.tmdb.org/t/p/w500/1Wtfucko1wQBAN4rJbRnqA6kqQQ.jpg" alt="The Last of Us" class="w-full h-40 object-cover">
                         <div class="p-4">
                             <h3 class="font-semibold text-lg mb-1">The Last of Us</h3>
                             <div class="flex items-center mb-2">
@@ -110,7 +110,7 @@
                     
                     <!-- Trending Music 1 -->
                     <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96" alt="Flowers - Miley Cyrus" class="w-full h-40 object-cover">
+                        <img src="https://f4.bcbits.com/img/a0467213482_10.jpg" alt="Flowers - Miley Cyrus" class="w-full h-40 object-cover">
                         <div class="p-4">
                             <h3 class="font-semibold text-lg mb-1">Flowers</h3>
                             <p class="text-gray-600 text-sm mb-2">Miley Cyrus</p>
@@ -130,7 +130,7 @@
                     
                     <!-- Trending Movie 2 -->
                     <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg" alt="Barbie" class="w-full h-40 object-cover">
+                        <img src="https://image.tmdb.org/t/p/w500/yRRuLt7sMBEQkHsd1S3KaaofZn7.jpg" alt="Barbie" class="w-full h-40 object-cover">
                         <div class="p-4">
                             <h3 class="font-semibold text-lg mb-1">Barbie</h3>
                             <div class="flex items-center mb-2">
@@ -149,7 +149,7 @@
                     
                     <!-- Trending Series 2 -->
                     <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/dBxxtfhC4vYrxB2fLsTZUHgq3jK.jpg" alt="Succession" class="w-full h-40 object-cover">
+                        <img src="https://image.tmdb.org/t/p/w500/z0XiwdrCQ9yVIr4O0pxzaAYRxdW.jpg" alt="Succession" class="w-full h-40 object-cover">
                         <div class="p-4">
                             <h3 class="font-semibold text-lg mb-1">Succession</h3>
                             <div class="flex items-center mb-2">
@@ -259,294 +259,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- Media Sections (Movies, Series, Music) -->
-        <section id="movies" class="py-12 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="flex justify-between items-center mb-8">
-                    <h2 class="text-3xl font-bold">Filmes</h2>
-                    <a href="#" class="text-purple-700 hover:text-purple-900 font-medium">Ver todos</a>
-                </div>
-                
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    <!-- Movie 1 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/8Vt6mWRCeMCujQFQqkE3O6zqTdZ.jpg" alt="Oppenheimer" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">Oppenheimer</h3>
-                            <p class="text-gray-600 text-sm mb-2">2023 • 3h</p>
-                            <button onclick="showMediaDetails('movie', 'Oppenheimer')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Movie 2 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/iiXliCeykkzmJ0Eg9RYJ7F2CWSz.jpg" alt="Barbie" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">Barbie</h3>
-                            <p class="text-gray-600 text-sm mb-2">2023 • 1h54m</p>
-                            <button onclick="showMediaDetails('movie', 'Barbie')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Movie 3 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Duna" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">Duna</h3>
-                            <p class="text-gray-600 text-sm mb-2">2021 • 2h35m</p>
-                            <button onclick="showMediaDetails('movie', 'Duna')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Movie 4 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/1X7vow16X7CnQu9SIB5usFkKVPX.jpg" alt="Interestelar" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">Interestelar</h3>
-                            <p class="text-gray-600 text-sm mb-2">2014 • 2h49m</p>
-                            <button onclick="showMediaDetails('movie', 'Interestelar')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Movie 5 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Parasita" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">Parasita</h3>
-                            <p class="text-gray-600 text-sm mb-2">2019 • 2h12m</p>
-                            <button onclick="showMediaDetails('movie', 'Parasita')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="series" class="py-12 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="flex justify-between items-center mb-8">
-                    <h2 class="text-3xl font-bold">Séries</h2>
-                    <a href="#" class="text-purple-700 hover:text-purple-900 font-medium">Ver todas</a>
-                </div>
-                
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    <!-- Series 1 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/9GvhICFMiRQA82vS6ydkXxeEkrd.jpg" alt="The Last of Us" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">The Last of Us</h3>
-                            <p class="text-gray-600 text-sm mb-2">2023 • 1 temporada</p>
-                            <button onclick="showMediaDetails('series', 'The Last of Us')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Series 2 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/dBxxtfhC4vYrxB2fLsTZUHgq3jK.jpg" alt="Succession" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">Succession</h3>
-                            <p class="text-gray-600 text-sm mb-2">2018 • 4 temporadas</p>
-                            <button onclick="showMediaDetails('series', 'Succession')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Series 3 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/7Md3nuV0ZprBTnkdR3OrUCEsrSP.jpg" alt="The Bear" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">The Bear</h3>
-                            <p class="text-gray-600 text-sm mb-2">2022 • 2 temporadas</p>
-                            <button onclick="showMediaDetails('series', 'The Bear')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Series 4 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg" alt="Breaking Bad" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">Breaking Bad</h3>
-                            <p class="text-gray-600 text-sm mb-2">2008 • 5 temporadas</p>
-                            <button onclick="showMediaDetails('series', 'Breaking Bad')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Series 5 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/6kbAMLteGO8yyewYau6bJ683sw7.jpg" alt="Stranger Things" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">Stranger Things</h3>
-                            <p class="text-gray-600 text-sm mb-2">2016 • 4 temporadas</p>
-                            <button onclick="showMediaDetails('series', 'Stranger Things')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="music" class="py-12 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="flex justify-between items-center mb-8">
-                    <h2 class="text-3xl font-bold">Música</h2>
-                    <a href="#" class="text-purple-700 hover:text-purple-900 font-medium">Ver todas</a>
-                </div>
-                
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    <!-- Music 1 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96" alt="Flowers - Miley Cyrus" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">Flowers</h3>
-                            <p class="text-gray-600 text-sm mb-2">Miley Cyrus • 2023</p>
-                            <button onclick="showMediaDetails('music', 'Flowers - Miley Cyrus')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Music 2 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://i.scdn.co/image/ab67616d00001e02a435d5c3c1fb1e94b4e9a27d" alt="Kill Bill - SZA" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">Kill Bill</h3>
-                            <p class="text-gray-600 text-sm mb-2">SZA • 2022</p>
-                            <button onclick="showMediaDetails('music', 'Kill Bill - SZA')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Music 3 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://i.scdn.co/image/ab67616d00001e02e0b60c608586d88251b6a1f0" alt="Anti-Hero - Taylor Swift" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">Anti-Hero</h3>
-                            <p class="text-gray-600 text-sm mb-2">Taylor Swift • 2022</p>
-                            <button onclick="showMediaDetails('music', 'Anti-Hero - Taylor Swift')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Music 4 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://i.scdn.co/image/ab67616d00001e02d4d08aab6e7a013b77de66fa" alt="As It Was - Harry Styles" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">As It Was</h3>
-                            <p class="text-gray-600 text-sm mb-2">Harry Styles • 2022</p>
-                            <button onclick="showMediaDetails('music', 'As It Was - Harry Styles')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Music 5 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://i.scdn.co/image/ab67616d00001e02b598d3a9d5a9a3f5aaf8b8a7" alt="Blinding Lights - The Weeknd" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold mb-1">Blinding Lights</h3>
-                            <p class="text-gray-600 text-sm mb-2">The Weeknd • 2020</p>
-                            <button onclick="showMediaDetails('music', 'Blinding Lights - The Weeknd')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- News Section -->
-        <section id="news" class="py-12 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold mb-8 text-center">Jornal Cultural</h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- News 1 -->
-                    <div class="news-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://images.unsplash.com/photo-1486578077620-8a022ddd481f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Oscar 2023" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <span class="text-purple-700 text-sm font-semibold">Cinema</span>
-                            <h3 class="news-title text-xl font-bold mt-2 mb-3 transition duration-300">Oscar 2023: Análise dos principais vencedores e destaques</h3>
-                            <p class="text-gray-600 mb-4">Uma análise profunda dos filmes premiados no Oscar deste ano, com insights sobre as tendências da indústria cinematográfica.</p>
-                            <div class="flex justify-between items-center text-sm">
-                                <span class="text-gray-500">15/03/2023</span>
-                                <a href="#" class="text-purple-700 font-medium hover:text-purple-900">Ler mais</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- News 2 -->
-                    <div class="news-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1413&q=80" alt="Streaming" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <span class="text-blue-700 text-sm font-semibold">Séries</span>
-                            <h3 class="news-title text-xl font-bold mt-2 mb-3 transition duration-300">O impacto das plataformas de streaming na produção de séries</h3>
-                            <p class="text-gray-600 mb-4">Como a guerra entre streaming está moldando o futuro das séries de TV e quais as consequências para a qualidade do conteúdo.</p>
-                            <div class="flex justify-between items-center text-sm">
-                                <span class="text-gray-500">28/02/2023</span>
-                                <a href="#" class="text-purple-700 font-medium hover:text-purple-900">Ler mais</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- News 3 -->
-                    <div class="news-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Música" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <span class="text-green-700 text-sm font-semibold">Música</span>
-                            <h3 class="news-title text-xl font-bold mt-2 mb-3 transition duration-300">O renascimento do pop dos anos 2000: por que essas músicas estão voltando?</h3>
-                            <p class="text-gray-600 mb-4">Analisamos o fenômeno da nostalgia musical e como artistas estão revisitando o som dos anos 2000 com sucesso.</p>
-                            <div class="flex justify-between items-center text-sm">
-                                <span class="text-gray-500">10/02/2023</span>
-                                <a href="#" class="text-purple-700 font-medium hover:text-purple-900">Ler mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="text-center mt-8">
-                    <button class="bg-purple-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-800 transition">Ver mais artigos</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-12 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold mb-6">Sobre Nós</h2>
-                    <p class="text-lg text-gray-700 mb-8">
-                        A Central Crítica nasceu da paixão por cultura e da necessidade de um espaço onde amantes de cinema, séries e música pudessem compartilhar suas opiniões de forma construtiva. Nosso objetivo é criar uma comunidade engajada que discuta obras culturais com profundidade e respeito, indo além do simples "gostei" ou "não gostei".
-                    </p>
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <div class="bg-gray-50 p-6 rounded-lg">
-                            <i class="fas fa-film text-4xl text-purple-700 mb-4"></i>
-                            <h3 class="font-bold text-xl mb-2">Missão</h3>
-                            <p class="text-gray-600">Promover discussões ricas e análises profundas sobre produções culturais, elevando o nível do debate crítico.</p>
-                        </div>
-                        <div class="bg-gray-50 p-6 rounded-lg">
-                            <i class="fas fa-users text-4xl text-purple-700 mb-4"></i>
-                            <h3 class="font-bold text-xl mb-2">Visão</h3>
-                            <p class="text-gray-600">Ser a principal referência em críticas culturais colaborativas no Brasil até 2025.</p>
-                        </div>
-                        <div class="bg-gray-50 p-6 rounded-lg">
-                            <i class="fas fa-heart text-4xl text-purple-700 mb-4"></i>
-                            <h3 class="font-bold text-xl mb-2">Valores</h3>
-                            <p class="text-gray-600">Respeito às diferenças, paixão pela cultura, rigor analítico e incentivo à diversidade de vozes.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Media Details Modal -->
-        <div id="mediaModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden overflow-y-auto">
-            <div class="container mx-auto px-4 py-12">
-                <div class="bg-white rounded-lg shadow-xl max-w-4xl mx-auto">
-                    <div class="flex justify-between items-center border-b px-6 py-4">
-                        <h3 id="mediaModalTitle" class="text-xl font-bold"></h3>
-                        <button onclick="closeMediaModal()" class="text-gray-500 hover:text-gray-700">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                    <div id="mediaModalContent" class="p-6">
-                        <!-- Content will be loaded here -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
+            <!-- Footer -->
     <footer class="gradient-bg text-white py-8">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -560,7 +273,7 @@
                 <div>
                     <h4 class="font-bold text-lg mb-4">Navegação</h4>
                     <ul class="space-y-2">
-                        <li><a href="#home" class="hover:text-purple-200 transition">Início</a></li>
+                        <li><a href="./index.html" class="hover:text-purple-200 transition">Início</a></li>
                         <li><a href="#movies" class="hover:text-purple-200 transition">Filmes</a></li>
                         <li><a href="#series" class="hover:text-purple-200 transition">Séries</a></li>
                         <li><a href="#music" class="hover:text-purple-200 transition">Música</a></li>
@@ -587,10 +300,11 @@
                 </div>
             </div>
             <div class="border-t border-purple-400 mt-8 pt-6 text-center text-purple-200">
-                <p>&copy; 2023 Central Crítica. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Central Crítica. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-    <script src = "script.js"></script>
+    </main>
+    <script src = "./js/script.js"></script>
 </body>
 </html>

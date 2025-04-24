@@ -15,7 +15,7 @@ const mediaData = {
             director: 'Christopher Nolan',
             cast: 'Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr.',
             synopsis: 'O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.',
-            cover: 'https://image.tmdb.org/t/p/w500/8Vt6mWRCeMCujQFQqkE3O6zqTdZ.jpg',
+            cover: 'https://image.tmdb.org/t/p/w500/1OsQJEoSXBjduuCvDOlRhoEUaHu.jpg',
             audienceRating: '4.5',
             criticRating: '4.8',
             reviews: [
