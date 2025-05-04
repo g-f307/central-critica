@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="gradient-bg text-white shadow-lg">
+    <nav class="gradient-bg text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-2">
@@ -18,12 +17,12 @@
                     <span class="text-xl font-bold">Central Crítica</span>
                 </div>
                 <div class="hidden md:flex space-x-6">
-                    <a href="./index.html" class="hover:text-purple-200 transition">Início</a>
-                    <a href="./public/filmes.html" class="hover:text-purple-200 transition">Filmes</a>
-                    <a href="./public/series.html" class="hover:text-purple-200 transition">Séries</a>
-                    <a href="./public/musicas.html" class="hover:text-purple-200 transition">Música</a>
-                    <a href="./public/jornal.html" class="hover:text-purple-200 transition">Jornal</a>
-                    <a href="./public/sobre.html" class="hover:text-purple-200 transition">Sobre Nós</a>
+                    <a href="./index.html" class="hover:text-purple-200 transition font-medium">Início</a>
+                    <a href="./public/filmes.html" class="hover:text-purple-200 transition font-medium">Filmes</a>
+                    <a href="./public/series.html" class="hover:text-purple-200 transition font-medium">Séries</a>
+                    <a href="./public/musicas.html" class="hover:text-purple-200 transition font-medium">Música</a>
+                    <a href="./public/jornal.html" class="hover:text-purple-200 transition font-medium">Jornal</a>
+                    <a href="./public/sobre.html" class="hover:text-purple-200 transition font-medium">Sobre Nós</a>
                 </div>
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-white focus:outline-none">
@@ -32,7 +31,6 @@
                 </div>
             </div>
         </div>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden gradient-bg px-4 pb-4">
             <a href="./index.html" class="block py-2 hover:text-purple-200 transition">Início</a>
             <a href="./public/filmes.html" class="block py-2 hover:text-purple-200 transition">Filmes</a>
@@ -42,224 +40,354 @@
             <a href="./public/sobre.html" class="block py-2 hover:text-purple-200 transition">Sobre Nós</a>
         </div>
     </nav>
-
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section id="home" class="gradient-bg text-white py-16">
+        <section id="home" class="gradient-bg text-white py-16 md:py-24">
             <div class="container mx-auto px-4">
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-1/2 mb-8 md:mb-0">
-                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Descubra, Analise, Compartilhe</h1>
-                        <p class="text-xl mb-6">A plataforma definitiva para críticas de filmes, séries e música. Junte-se à comunidade e compartilhe suas opiniões.</p>
-                        <div class="flex space-x-4">
-                            <button class="bg-white text-purple-800 px-6 py-2 rounded-full font-semibold hover:bg-purple-100 transition">Explorar</button>
-                            <button class="border border-white text-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-purple-800 transition">Cadastre-se</button>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 hero-text-shadow">Descubra, Analise, Compartilhe</h1>
+                        <p class="text-xl mb-6 text-purple-100">A plataforma definitiva para críticas de filmes, séries e música. Junte-se à comunidade e compartilhe suas opiniões.</p>
+                        <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                            <button class="bg-white text-purple-800 px-6 py-3 rounded-full font-semibold hover:bg-purple-100 transition transform hover:scale-105 shadow-lg">
+                                Explorar <i class="fas fa-chevron-right ml-2"></i>
+                            </button>
+                            <button class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-800 transition transform hover:scale-105">
+                                Cadastre-se <i class="fas fa-user-plus ml-2"></i>
+                            </button>
+                        </div>
+                        <div class="mt-8 flex items-center space-x-4">
+                            <div class="flex -space-x-2">
+                                <img src="https://randomuser.me/api/portraits/women/12.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                                <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                            </div>
+                            <p class="text-purple-100 text-sm">
+                                <span class="font-semibold">+10.000</span> usuários ativos
+                            </p>
                         </div>
                     </div>
                     <div class="md:w-1/2 flex justify-center">
-                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Pessoas assistindo filme" class="rounded-lg shadow-xl w-full max-w-md">
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Pessoas assistindo filme" 
+                             class="rounded-xl hero-image-shadow w-full max-w-md lg:max-w-lg">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Trending Section -->
-        <section class="py-12 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold mb-8 text-center">Em alta esta semana</h2>
-                
-                <div class="flex overflow-x-auto pb-6 space-x-4 scrollbar-hide">
-                    <!-- Trending Movie 1 -->
-                    <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/1OsQJEoSXBjduuCvDOlRhoEUaHu.jpg" alt="Oppenheimer" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold text-lg mb-1">Oppenheimer</h3>
-                            <div class="flex items-center mb-2">
-                                <div class="rating-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <span class="text-gray-600 ml-2">4.5</span>
+        <!-- Sessão em alta -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800">Em alta esta semana</h2>
+                    <p class="text-gray-500 mt-2">Os conteúdos mais populares do momento</p>
+                </div>
+                <div class="flex space-x-2 mt-4 md:mt-0">
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-700 transition flex items-center">
+                        <i class="fas fa-film mr-2"></i> Filmes
+                    </button>
+                    <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition flex items-center">
+                        <i class="fas fa-tv mr-2"></i> Séries
+                    </button>
+                    <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition flex items-center">
+                        <i class="fas fa-music mr-2"></i> Música
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="flex overflow-x-auto pb-6 space-x-6 scrollbar-custom">
+                    <div class="media-card flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                        <div class="relative">
+                            <img src="https://image.tmdb.org/t/p/w500/1OsQJEoSXBjduuCvDOlRhoEUaHu.jpg" alt="Oppenheimer" class="w-full h-48 object-cover">
+                            <div class="absolute top-3 right-3 bg-purple-600 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                <i class="fas fa-film mr-1"></i> Filme
                             </div>
-                            <button onclick="showMediaDetails('movie', 'Oppenheimer')" class="text-purple-700 hover:text-purple-900 font-medium">Ver detalhes</button>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                <div class="flex items-center">
+                                    <div class="rating-stars">
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-white ml-1 font-medium">4.5</span>
+                                    </div>
+                                    <span class="text-white text-xs ml-2">(12.4k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-xl mb-1 text-gray-800">Oppenheimer</h3>
+                            <p class="text-gray-600 text-sm mb-4 flex items-center">
+                                <span class="bg-gray-100 px-2 py-1 rounded mr-2">2023</span>
+                                <span>3h • Biografia</span>
+                            </p>
+                            <button onclick="showMediaDetails('movie', 'Oppenheimer')" class="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-lg transition flex items-center justify-center">
+                                <i class="fas fa-info-circle mr-2"></i> Ver detalhes
+                            </button>
                         </div>
                     </div>
-                    
+
                     <!-- Trending Series 1 -->
-                    <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/1Wtfucko1wQBAN4rJbRnqA6kqQQ.jpg" alt="The Last of Us" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold text-lg mb-1">The Last of Us</h3>
-                            <div class="flex items-center mb-2">
-                                <div class="rating-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <span class="text-gray-600 ml-2">4.0</span>
+                    <div class="media-card flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                        <div class="relative">
+                            <img src="https://image.tmdb.org/t/p/w500/1Wtfucko1wQBAN4rJbRnqA6kqQQ.jpg" alt="The Last of Us" class="w-full h-48 object-cover">
+                            <div class="absolute top-3 right-3 bg-blue-600 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                <i class="fas fa-tv mr-1"></i> Série
                             </div>
-                            <button onclick="showMediaDetails('series', 'The Last of Us')" class="text-purple-700 hover:text-purple-900 font-medium">Ver detalhes</button>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                <div class="flex items-center">
+                                    <div class="rating-stars">
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-white ml-1 font-medium">4.8</span>
+                                    </div>
+                                    <span class="text-white text-xs ml-2">(8.7k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-xl mb-1 text-gray-800">The Last of Us</h3>
+                            <p class="text-gray-600 text-sm mb-4 flex items-center">
+                                <span class="bg-gray-100 px-2 py-1 rounded mr-2">2023</span>
+                                <span>1 temporada</span>
+                            </p>
+                            <button onclick="showMediaDetails('series', 'The Last of Us')" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition flex items-center justify-center">
+                                <i class="fas fa-info-circle mr-2"></i> Ver detalhes
+                            </button>
                         </div>
                     </div>
-                    
+
                     <!-- Trending Music 1 -->
-                    <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://f4.bcbits.com/img/a0467213482_10.jpg" alt="Flowers - Miley Cyrus" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold text-lg mb-1">Flowers</h3>
-                            <p class="text-gray-600 text-sm mb-2">Miley Cyrus</p>
-                            <div class="flex items-center mb-2">
-                                <div class="rating-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <span class="text-gray-600 ml-2">5.0</span>
+                    <div class="media-card flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                        <div class="relative">
+                            <img src="https://f4.bcbits.com/img/a0467213482_10.jpg" alt="Flowers - Miley Cyrus" class="w-full h-48 object-cover">
+                            <div class="absolute top-3 right-3 bg-pink-600 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                <i class="fas fa-music mr-1"></i> Música
                             </div>
-                            <button onclick="showMediaDetails('music', 'Flowers - Miley Cyrus')" class="text-purple-700 hover:text-purple-900 font-medium">Ver detalhes</button>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                <div class="flex items-center">
+                                    <div class="rating-stars">
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-white ml-1 font-medium">5.0</span>
+                                    </div>
+                                    <span class="text-white text-xs ml-2">(25.1k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-xl mb-1 text-gray-800">Flowers</h3>
+                            <p class="text-gray-600 text-sm mb-4">Miley Cyrus • 2023</p>
+                            <div class="flex space-x-2">
+                                <button onclick="playMusic('Flowers - Miley Cyrus')" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-lg transition flex items-center justify-center">
+                                    <i class="fas fa-play mr-2"></i> Ouvir
+                                </button>
+                                <button onclick="showMediaDetails('music', 'Flowers - Miley Cyrus')" class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700 py-2 rounded-lg transition">
+                                    <i class="fas fa-info"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    
+
                     <!-- Trending Movie 2 -->
-                    <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/yRRuLt7sMBEQkHsd1S3KaaofZn7.jpg" alt="Barbie" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold text-lg mb-1">Barbie</h3>
-                            <div class="flex items-center mb-2">
-                                <div class="rating-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <span class="text-gray-600 ml-2">4.0</span>
+                    <div class="media-card flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                        <div class="relative">
+                            <img src="https://image.tmdb.org/t/p/w500/yRRuLt7sMBEQkHsd1S3KaaofZn7.jpg" alt="Barbie" class="w-full h-48 object-cover">
+                            <div class="absolute top-3 right-3 bg-purple-600 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                <i class="fas fa-film mr-1"></i> Filme
                             </div>
-                            <button onclick="showMediaDetails('movie', 'Barbie')" class="text-purple-700 hover:text-purple-900 font-medium">Ver detalhes</button>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                <div class="flex items-center">
+                                    <div class="rating-stars">
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-white ml-1 font-medium">4.0</span>
+                                    </div>
+                                    <span class="text-white text-xs ml-2">(9.3k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-xl mb-1 text-gray-800">Barbie</h3>
+                            <p class="text-gray-600 text-sm mb-4 flex items-center">
+                                <span class="bg-gray-100 px-2 py-1 rounded mr-2">2023</span>
+                                <span>1h54m • Comédia</span>
+                            </p>
+                            <button onclick="showMediaDetails('movie', 'Barbie')" class="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-lg transition flex items-center justify-center">
+                                <i class="fas fa-info-circle mr-2"></i> Ver detalhes
+                            </button>
                         </div>
                     </div>
-                    
+
                     <!-- Trending Series 2 -->
-                    <div class="media-card flex-shrink-0 w-64 bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/z0XiwdrCQ9yVIr4O0pxzaAYRxdW.jpg" alt="Succession" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold text-lg mb-1">Succession</h3>
-                            <div class="flex items-center mb-2">
-                                <div class="rating-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <span class="text-gray-600 ml-2">4.5</span>
+                    <div class="media-card flex-shrink-0 w-72 bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                        <div class="relative">
+                            <img src="https://image.tmdb.org/t/p/w500/z0XiwdrCQ9yVIr4O0pxzaAYRxdW.jpg" alt="Succession" class="w-full h-48 object-cover">
+                            <div class="absolute top-3 right-3 bg-blue-600 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                                <i class="fas fa-tv mr-1"></i> Série
                             </div>
-                            <button onclick="showMediaDetails('series', 'Succession')" class="text-purple-700 hover:text-purple-900 font-medium">Ver detalhes</button>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                <div class="flex items-center">
+                                    <div class="rating-stars">
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-white ml-1 font-medium">4.7</span>
+                                    </div>
+                                    <span class="text-white text-xs ml-2">(6.2k)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-xl mb-1 text-gray-800">Succession</h3>
+                            <p class="text-gray-600 text-sm mb-4 flex items-center">
+                                <span class="bg-gray-100 px-2 py-1 rounded mr-2">2018</span>
+                                <span>4 temporadas</span>
+                            </p>
+                            <button onclick="showMediaDetails('series', 'Succession')" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition flex items-center justify-center">
+                                <i class="fas fa-info-circle mr-2"></i> Ver detalhes
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Latest Reviews Section -->
+        <!-- últimas Críticas -->
         <section class="py-12 bg-gray-50">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold mb-8 text-center">Últimas Críticas</h2>
+                <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                    <h2 class="text-3xl font-bold">Últimas Críticas</h2>
+                    <button class="mt-4 md:mt-0 bg-purple-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-800 transition flex items-center">
+                        Escrever crítica <i class="fas fa-pen ml-2"></i>
+                    </button>
+                </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Review 1 -->
-                    <div class="review-card bg-white rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
-                        <div class="flex items-center mb-4">
-                            <div class="w-10 h-10 rounded-full bg-purple-200 flex items-center justify-center text-purple-800 font-bold">JP</div>
-                            <div class="ml-3">
-                                <h4 class="font-semibold">João Pedro</h4>
-                                <p class="text-gray-500 text-sm">Há 2 dias</p>
+                    <div class="review-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full" alt="João Pedro">
+                                <div class="ml-3">
+                                    <h4 class="font-semibold">João Pedro</h4>
+                                    <p class="text-gray-500 text-sm">Há 2 dias</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex items-center mb-3">
-                            <div class="rating-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+                            <div class="flex items-center mb-3">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="ml-2 font-medium">Oppenheimer</span>
                             </div>
-                            <span class="ml-2 font-medium">Oppenheimer</span>
-                        </div>
-                        <p class="text-gray-700 mb-4">Nolan mais uma vez mostra sua maestria na direção. A performance de Cillian Murphy é simplesmente brilhante. O filme é intenso do começo ao fim, com uma fotografia impecável e trilha sonora que te deixa em suspense constante.</p>
-                        <div class="flex justify-between text-sm text-gray-500">
-                            <span><i class="far fa-thumbs-up"></i> 24</span>
-                            <span><i class="far fa-comment"></i> 5</span>
+                            <p class="text-gray-700 mb-4">Nolan mais uma vez mostra sua maestria na direção. A performance de Cillian Murphy é simplesmente brilhante. O filme é intenso do começo ao fim, com uma fotografia impecável e trilha sonora que te deixa em suspense constante.</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <button class="flex items-center text-gray-600 hover:text-purple-700">
+                                    <i class="far fa-thumbs-up mr-1"></i> 24
+                                </button>
+                                <button class="flex items-center text-gray-600 hover:text-purple-700">
+                                    <i class="far fa-comment mr-1"></i> 5
+                                </button>
+                                <button class="flex items-center text-gray-600 hover:text-purple-700">
+                                    <i class="fas fa-share mr-1"></i> Compartilhar
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- Review 2 -->
-                    <div class="review-card bg-white rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
-                        <div class="flex items-center mb-4">
-                            <div class="w-10 h-10 rounded-full bg-blue-200 flex items-center justify-center text-blue-800 font-bold">AM</div>
-                            <div class="ml-3">
-                                <h4 class="font-semibold">Ana Maria</h4>
-                                <p class="text-gray-500 text-sm">Há 5 dias</p>
+                    <div class="review-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-10 h-10 rounded-full" alt="Ana Maria">
+                                <div class="ml-3">
+                                    <h4 class="font-semibold">Ana Maria</h4>
+                                    <p class="text-gray-500 text-sm">Há 5 dias</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex items-center mb-3">
-                            <div class="rating-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                            <div class="flex items-center mb-3">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="ml-2 font-medium">Flowers - Miley Cyrus</span>
                             </div>
-                            <span class="ml-2 font-medium">Flowers - Miley Cyrus</span>
-                        </div>
-                        <p class="text-gray-700 mb-4">Que hino de empoderamento! Miley está no auge de sua carreira. A letra é inteligente, a melodia cativante e o clipe é uma obra de arte. Não consigo parar de ouvir no repeat. Certamente uma das melhores músicas do ano!</p>
-                        <div class="flex justify-between text-sm text-gray-500">
-                            <span><i class="far fa-thumbs-up"></i> 18</span>
-                            <span><i class="far fa-comment"></i> 3</span>
+                            <p class="text-gray-700 mb-4">Que hino de empoderamento! Miley está no auge de sua carreira. A letra é inteligente, a melodia cativante e o clipe é uma obra de arte. Não consigo parar de ouvir no repeat. Certamente uma das melhores músicas do ano!</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <button class="flex items-center text-gray-600 hover:text-purple-700">
+                                    <i class="far fa-thumbs-up mr-1"></i> 18
+                                </button>
+                                <button class="flex items-center text-gray-600 hover:text-purple-700">
+                                    <i class="far fa-comment mr-1"></i> 3
+                                </button>
+                                <button class="flex items-center text-gray-600 hover:text-purple-700">
+                                    <i class="fas fa-share mr-1"></i> Compartilhar
+                                </button>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- Review 3 -->
-                    <div class="review-card bg-white rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
-                        <div class="flex items-center mb-4">
-                            <div class="w-10 h-10 rounded-full bg-green-200 flex items-center justify-center text-green-800 font-bold">CR</div>
-                            <div class="ml-3">
-                                <h4 class="font-semibold">Carlos Roberto</h4>
-                                <p class="text-gray-500 text-sm">Há 1 semana</p>
+                    <div class="review-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" class="w-10 h-10 rounded-full" alt="Carlos Roberto">
+                                <div class="ml-3">
+                                    <h4 class="font-semibold">Carlos Roberto</h4>
+                                    <p class="text-gray-500 text-sm">Há 1 semana</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex items-center mb-3">
-                            <div class="rating-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
+                            <div class="flex items-center mb-3">
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="ml-2 font-medium">The Last of Us</span>
                             </div>
-                            <span class="ml-2 font-medium">The Last of Us</span>
-                        </div>
-                        <p class="text-gray-700 mb-4">A adaptação superou minhas expectativas. Pedro Pascal e Bella Ramsey têm uma química incrível. A série consegue capturar a essência do jogo enquanto traz novas camadas narrativas. Os episódios 3 e 5 são obras-primas da televisão.</p>
-                        <div class="flex justify-between text-sm text-gray-500">
-                            <span><i class="far fa-thumbs-up"></i> 32</span>
-                            <span><i class="far fa-comment"></i> 8</span>
+                            <p class="text-gray-700 mb-4">A adaptação superou minhas expectativas. Pedro Pascal e Bella Ramsey têm uma química incrível. A série consegue capturar a essência do jogo enquanto traz novas camadas narrativas. Os episódios 3 e 5 são obras-primas da televisão.</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <button class="flex items-center text-gray-600 hover:text-purple-700">
+                                    <i class="far fa-thumbs-up mr-1"></i> 32
+                                </button>
+                                <button class="flex items-center text-gray-600 hover:text-purple-700">
+                                    <i class="far fa-comment mr-1"></i> 8
+                                </button>
+                                <button class="flex items-center text-gray-600 hover:text-purple-700">
+                                    <i class="fas fa-share mr-1"></i> Compartilhar
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="text-center mt-8">
-                    <button class="bg-purple-700 text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-800 transition">Ver mais críticas</button>
+                    <button class="bg-white text-purple-700 border border-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-purple-50 transition flex items-center mx-auto">
+                        Ver mais críticas <i class="fas fa-chevron-down ml-2"></i>
+                    </button>
                 </div>
             </div>
         </section>
-            <!-- Footer -->
+        <section class="py-12 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4">Receba as últimas novidades</h2>
+                <p class="text-xl mb-6 max-w-2xl mx-auto">Assine nossa newsletter e fique por dentro das melhores críticas e lançamentos culturais.</p>
+                <div class="flex flex-col sm:flex-row max-w-md mx-auto sm:max-w-xl">
+                    <input type="email" placeholder="Seu melhor e-mail" class="px-4 py-3 rounded-l-full sm:rounded-r-none rounded-full mb-2 sm:mb-0 flex-grow focus:outline-none text-gray-900">
+                    <button class="bg-white text-purple-700 px-6 py-3 rounded-r-full font-semibold hover:bg-purple-100 transition sm:ml-2">
+                        Assinar <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </div>
+                <p class="text-sm mt-4 text-purple-200">Nós nunca compartilharemos seu e-mail com terceiros.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer class="gradient-bg text-white py-8">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -274,16 +402,16 @@
                     <h4 class="font-bold text-lg mb-4">Navegação</h4>
                     <ul class="space-y-2">
                         <li><a href="./index.html" class="hover:text-purple-200 transition">Início</a></li>
-                        <li><a href="#movies" class="hover:text-purple-200 transition">Filmes</a></li>
-                        <li><a href="#series" class="hover:text-purple-200 transition">Séries</a></li>
-                        <li><a href="#music" class="hover:text-purple-200 transition">Música</a></li>
+                        <li><a href="./public/filmes.html" class="hover:text-purple-200 transition">Filmes</a></li>
+                        <li><a href="./public/series.html" class="hover:text-purple-200 transition">Séries</a></li>
+                        <li><a href="./public/musicas.html" class="hover:text-purple-200 transition">Música</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold text-lg mb-4">Informações</h4>
                     <ul class="space-y-2">
-                        <li><a href="#news" class="hover:text-purple-200 transition">Jornal</a></li>
-                        <li><a href="#about" class="hover:text-purple-200 transition">Sobre Nós</a></li>
+                        <li><a href="./public/jornal.html" class="hover:text-purple-200 transition">Jornal</a></li>
+                        <li><a href="./public/sobre.html" class="hover:text-purple-200 transition">Sobre Nós</a></li>
                         <li><a href="#" class="hover:text-purple-200 transition">Termos de Uso</a></li>
                         <li><a href="#" class="hover:text-purple-200 transition">Política de Privacidade</a></li>
                     </ul>
@@ -296,7 +424,12 @@
                         <a href="#" class="hover:text-purple-200 transition"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="hover:text-purple-200 transition"><i class="fab fa-youtube"></i></a>
                     </div>
-                    <p class="text-purple-200">contato@centralcritica.com</p>
+                    <p class="text-purple-200">
+                        <i class="fas fa-envelope mr-2"></i> contato@centralcritica.com
+                    </p>
+                    <p class="text-purple-200 mt-2">
+                        <i class="fas fa-phone mr-2"></i> (11) 1234-5678
+                    </p>
                 </div>
             </div>
             <div class="border-t border-purple-400 mt-8 pt-6 text-center text-purple-200">
@@ -304,7 +437,36 @@
             </div>
         </div>
     </footer>
-    </main>
-    <script src = "./js/script.js"></script>
+
+    <!-- Card individual -->
+    <div id="mediaModal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
+                            <div class="flex justify-between items-center mb-4">
+                                <h3 id="mediaModalTitle" class="text-2xl leading-6 font-bold text-gray-900"></h3>
+                                <button onclick="closeMediaModal()" class="text-gray-500 hover:text-gray-700">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div id="mediaModalContent" class="mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="button" onclick="closeMediaModal()" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>

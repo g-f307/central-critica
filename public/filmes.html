@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmes</title>
+    <title>Filmes - Central Crítica</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navegação -->
     <nav class="gradient-bg text-white shadow-lg">
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
@@ -46,64 +46,153 @@
         <section id="movies" class="py-12 bg-white">
             <div class="container mx-auto px-4">
                 <div class="flex justify-between items-center mb-8">
-                    <h2 class="text-3xl font-bold">Filmes</h2>
+                    <h2 class="text-2xl md:text-3xl font-bold">Filmes em Destaque</h2>
                     <a href="#" class="text-purple-700 hover:text-purple-900 font-medium">Ver todos</a>
                 </div>
                 
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    <!-- Movie 1 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/1OsQJEoSXBjduuCvDOlRhoEUaHu.jpg" alt="Oppenheimer" class="w-full h-48 object-cover">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- FILME 1 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="relative">
+                            <img src="https://www.themoviedb.org/t/p/w1280/wTNLBphcAXZW45CP9yXP3794FD3.jpg" alt="Scott Pilgrim" class="w-full h-64 object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                <div class="flex items-center">
+                                    <div class="rating-stars mr-2">
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-white ml-1">5.0</span>
+                                    </div>
+                                    <span class="text-white text-sm bg-purple-600 px-2 py-1 rounded">9.5</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="p-4">
-                            <h3 class="font-semibold mb-1">Oppenheimer</h3>
-                            <p class="text-gray-600 text-sm mb-2">2023 • 3h</p>
-                            <button onclick="showMediaDetails('movie', 'Oppenheimer')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                            <h3 class="font-semibold text-lg mb-1">Scott Pilgrim Contra o Mundo</h3>
+                            <p class="text-gray-600 text-sm mb-3">2010 • 1h52m • Ação, Aventura</p>
+                            <p class="text-gray-700 text-sm mb-4 line-clamp-2">Guitarrista de uma banda de rock do colégio, o jovem Scott Pilgrim nunca teve problemas para conseguir namorada. O problema sempre foi se livrar delas. Mas com Ramona Flowers é diferente, pois ele se apaixona perdidamente por ela e não será nada fácil conquistar seu amor. Ela tem o maior de todos os problemas: um exército de ex-namorados que não medem esforços para eliminar Scott da lista de interessados.</p>
+                            <button onclick="showMediaDetails('movie', 'Scott Pilgrim')" class="w-full bg-purple-100 hover:bg-purple-200 text-purple-700 py-2 rounded-md transition">
+                                Ver detalhes
+                            </button>
                         </div>
                     </div>
                     
-                    <!-- Movie 2 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/yRRuLt7sMBEQkHsd1S3KaaofZn7.jpg" alt="Barbie" class="w-full h-48 object-cover">
+                    <!-- FILME 2-->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="relative">
+                            <img src="https://image.tmdb.org/t/p/w500/1OsQJEoSXBjduuCvDOlRhoEUaHu.jpg" alt="Oppenheimer" class="w-full h-64 object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                <div class="flex items-center">
+                                    <div class="rating-stars mr-2">
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-white ml-1">4.8</span>
+                                    </div>
+                                    <span class="text-white text-sm bg-purple-600 px-2 py-1 rounded">9.1</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="p-4">
-                            <h3 class="font-semibold mb-1">Barbie</h3>
-                            <p class="text-gray-600 text-sm mb-2">2023 • 1h54m</p>
-                            <button onclick="showMediaDetails('movie', 'Barbie')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                            <h3 class="font-semibold text-lg mb-1">Oppenheimer</h3>
+                            <p class="text-gray-600 text-sm mb-3">2023 • 3h • Drama, Histórico</p>
+                            <p class="text-gray-700 text-sm mb-4 line-clamp-2">O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.</p>
+                            <button onclick="showMediaDetails('movie', 'Oppenheimer')" class="w-full bg-purple-100 hover:bg-purple-200 text-purple-700 py-2 rounded-md transition">
+                                Ver detalhes
+                            </button>
                         </div>
                     </div>
                     
-                    <!-- Movie 3 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/obhGsx4PE9OzsVGtIfoLAIIWGNb.jpg" alt="Duna" class="w-full h-48 object-cover">
+                    <!-- FILME 3 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="relative">
+                            <img src="https://image.tmdb.org/t/p/w500/yRRuLt7sMBEQkHsd1S3KaaofZn7.jpg" alt="Barbie" class="w-full h-64 object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                <div class="flex items-center">
+                                    <div class="rating-stars mr-2">
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-white ml-1">4.2</span>
+                                    </div>
+                                    <span class="text-white text-sm bg-blue-600 px-2 py-1 rounded">7.8</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="p-4">
-                            <h3 class="font-semibold mb-1">Duna</h3>
-                            <p class="text-gray-600 text-sm mb-2">2021 • 2h35m</p>
-                            <button onclick="showMediaDetails('movie', 'Duna')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                            <h3 class="font-semibold text-lg mb-1">Barbie</h3>
+                            <p class="text-gray-600 text-sm mb-3">2023 • 1h54m • Comédia, Fantasia</p>
+                            <p class="text-gray-700 text-sm mb-4 line-clamp-2">Barbie começa a ter pensamentos existenciais e viaja para o mundo real para encontrar verdadeira felicidade.</p>
+                            <button onclick="showMediaDetails('movie', 'Barbie')" class="w-full bg-purple-100 hover:bg-purple-200 text-purple-700 py-2 rounded-md transition">
+                                Ver detalhes
+                            </button>
                         </div>
                     </div>
                     
-                    <!-- Movie 4 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg" alt="Interestelar" class="w-full h-48 object-cover">
+                    <!-- FILME 4 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="relative">
+                            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/obhGsx4PE9OzsVGtIfoLAIIWGNb.jpg" alt="Duna" class="w-full h-64 object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                <div class="flex items-center">
+                                    <div class="rating-stars mr-2">
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-white ml-1">4.5</span>
+                                    </div>
+                                    <span class="text-white text-sm bg-green-600 px-2 py-1 rounded">8.9</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="p-4">
-                            <h3 class="font-semibold mb-1">Interestelar</h3>
-                            <p class="text-gray-600 text-sm mb-2">2014 • 2h49m</p>
-                            <button onclick="showMediaDetails('movie', 'Interestelar')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                            <h3 class="font-semibold text-lg mb-1">Duna</h3>
+                            <p class="text-gray-600 text-sm mb-3">2021 • 2h35m • Ficção Científica, Aventura</p>
+                            <p class="text-gray-700 text-sm mb-4 line-clamp-2">O jovem Paul Atreides embarca em uma jornada pelo planeta mais perigoso do universo para garantir o futuro de sua família e seu povo.</p>
+                            <button onclick="showMediaDetails('movie', 'Duna')" class="w-full bg-purple-100 hover:bg-purple-200 text-purple-700 py-2 rounded-md transition">
+                                Ver detalhes
+                            </button>
                         </div>
                     </div>
                     
-                    <!-- Movie 5 -->
-                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
-                        <img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Parasita" class="w-full h-48 object-cover">
+                    <!-- FILME 5 -->
+                    <div class="media-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <div class="relative">
+                            <img src="https://image.tmdb.org/t/p/w500/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg" alt="Interestelar" class="w-full h-64 object-cover">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                                <div class="flex items-center">
+                                    <div class="rating-stars mr-2">
+                                        <i class="fas fa-star"></i>
+                                        <span class="text-white ml-1">4.7</span>
+                                    </div>
+                                    <span class="text-white text-sm bg-green-600 px-2 py-1 rounded">9.0</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="p-4">
-                            <h3 class="font-semibold mb-1">Parasita</h3>
-                            <p class="text-gray-600 text-sm mb-2">2019 • 2h12m</p>
-                            <button onclick="showMediaDetails('movie', 'Parasita')" class="text-purple-700 hover:text-purple-900 text-sm font-medium">Ver detalhes</button>
+                            <h3 class="font-semibold text-lg mb-1">Interestelar</h3>
+                            <p class="text-gray-600 text-sm mb-3">2014 • 2h49m • Ficção Científica, Drama</p>
+                            <p class="text-gray-700 text-sm mb-4 line-clamp-2">Uma equipe de exploradores viaja através de um buraco de minhoca no espaço na tentativa de garantir a sobrevivência da humanidade.</p>
+                            <button onclick="showMediaDetails('movie', 'Interestelar')" class="w-full bg-purple-100 hover:bg-purple-200 text-purple-700 py-2 rounded-md transition">
+                                Ver detalhes
+                            </button>
                         </div>
                     </div>
+                </div>
+                
+                <!-- Númeração de páginas -->
+                <div class="mt-12 flex justify-center">
+                    <nav class="flex items-center space-x-2">
+                        <button class="w-10 h-10 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center hover:bg-purple-200 transition">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="w-10 h-10 rounded-full bg-purple-600 text-white flex items-center justify-center">1</button>
+                        <button class="w-10 h-10 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center hover:bg-purple-200 transition">2</button>
+                        <button class="w-10 h-10 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center hover:bg-purple-200 transition">3</button>
+                        <span class="px-2">...</span>
+                        <button class="w-10 h-10 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center hover:bg-purple-200 transition">10</button>
+                        <button class="w-10 h-10 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center hover:bg-purple-200 transition">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </nav>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="gradient-bg text-white py-8">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -117,17 +206,17 @@
                 <div>
                     <h4 class="font-bold text-lg mb-4">Navegação</h4>
                     <ul class="space-y-2">
-                        <li><a href="#home" class="hover:text-purple-200 transition">Início</a></li>
-                        <li><a href="#movies" class="hover:text-purple-200 transition">Filmes</a></li>
-                        <li><a href="#series" class="hover:text-purple-200 transition">Séries</a></li>
-                        <li><a href="#music" class="hover:text-purple-200 transition">Música</a></li>
+                        <li><a href="../index.html" class="hover:text-purple-200 transition">Início</a></li>
+                        <li><a href="./filmes.html" class="hover:text-purple-200 transition">Filmes</a></li>
+                        <li><a href="./series.html" class="hover:text-purple-200 transition">Séries</a></li>
+                        <li><a href="./musicas.html" class="hover:text-purple-200 transition">Música</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold text-lg mb-4">Informações</h4>
                     <ul class="space-y-2">
-                        <li><a href="#news" class="hover:text-purple-200 transition">Jornal</a></li>
-                        <li><a href="#about" class="hover:text-purple-200 transition">Sobre Nós</a></li>
+                        <li><a href="./jornal.html" class="hover:text-purple-200 transition">Jornal</a></li>
+                        <li><a href="./sobre.html" class="hover:text-purple-200 transition">Sobre Nós</a></li>
                         <li><a href="#" class="hover:text-purple-200 transition">Termos de Uso</a></li>
                         <li><a href="#" class="hover:text-purple-200 transition">Política de Privacidade</a></li>
                     </ul>
@@ -148,6 +237,36 @@
             </div>
         </div>
     </footer>
+
+    <!-- Card individual -->
+    <div id="mediaModal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
+                            <div class="flex justify-between items-center mb-4">
+                                <h3 id="mediaModalTitle" class="text-2xl leading-6 font-bold text-gray-900"></h3>
+                                <button onclick="closeMediaModal()" class="text-gray-500 hover:text-gray-700">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <div id="mediaModalContent" class="mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="button" onclick="closeMediaModal()" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src = "../js/script.js"></script>
 </body>
 </html>
