@@ -84,6 +84,6 @@ Protótipos realizados para confecção das páginas do site:
 
 > [!NOTE]
 > Atualmente o site está hospedado no Github Pages. Para acessá-lo, visite o link (compátivel com qualquer dispositivo):    
-> https://g-f307.github.io/Projeto-Desen-WEB/
+> https://g-f307.github.io/central-critica-fullstack/
 
 ---
