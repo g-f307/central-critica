@@ -33,19 +33,19 @@ Projeto desenvolvido na disciplina de Desenvolvimento WEB, do curso Análise e D
 Protótipos realizados para confecção das páginas do site: 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8a74c1b0-6f22-4ca0-adee-d4cc7ecc12da" alt="Descrição da imagem" width="600">
+  <img src="https://github.com/user-attachments/assets/ceefcb6c-3835-48b9-a92e-77c9440823b9" alt="Descrição da imagem" width="600">
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c56bd182-4732-463e-9e71-59cac0dc93d5" alt="Descrição da imagem" width="600">
+  <img src="https://github.com/user-attachments/assets/8123fec2-1b57-41bd-9b3a-5eb7c6ba2f3a" alt="Descrição da imagem" width="600">
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1c5c2292-86ed-4737-8848-8296167c0ecf" alt="Descrição da imagem" width="600">
+  <img src="https://github.com/user-attachments/assets/f3a1a276-c197-48c6-a19d-547653ba8493" alt="Descrição da imagem" width="600">
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/52c86554-7a27-4f5c-ace2-9028ce3960b5" alt="Descrição da imagem" width="600">
+  <img src="https://github.com/user-attachments/assets/18a29a2d-37f0-4ed8-8b24-21b46ce9ab80" alt="Descrição da imagem" width="600">
 </p>
 
 ---
