@@ -63,6 +63,8 @@ Amantes da arte, entretenimento e cultura pop que buscam aprofundar suas experi�
 
 ## 🚀 Tecnologias Utilizadas
 
+<div align="center">
+
 | Categoria  | Tecnologia           | Descrição |
 |------------|----------------------|-----------|
 | Frontend   | React (com Vite)     | Interface com build moderno |
@@ -78,6 +80,8 @@ Amantes da arte, entretenimento e cultura pop que buscam aprofundar suas experi�
 |            | JWT & Passport.js    | Autenticação e OAuth |
 | API Externa| TMDB API             | Dados de filmes e séries |
 | Controle   | Git & GitHub         | Versionamento de código |
+
+</div>
 
 ---
 
@@ -110,6 +114,8 @@ central-critica-fullstack/
 
 ### Autenticação (`/auth`)
 
+<div align="center">
+
 | Método | Endpoint           | Protegido? | Descrição                          |
 |--------|--------------------|------------|------------------------------------|
 | POST   | /register          | Não        | Registra usuário                   |
@@ -117,7 +123,11 @@ central-critica-fullstack/
 | GET    | /google            | Não        | Início OAuth                       |
 | GET    | /google/callback   | Não        | Callback do Google                 |
 
+</div>
+
 ### Críticas (`/reviews`)
+
+<div align="center">
 
 | Método | Endpoint                        | Protegido? | Descrição                             |
 |--------|----------------------------------|------------|----------------------------------------|
@@ -125,7 +135,11 @@ central-critica-fullstack/
 | GET    | /:mediaType/:mediaId             | Não        | Críticas de uma mídia específica       |
 | GET    | /my-reviews/all                  | Sim        | Críticas do usuário logado             |
 
+</div>
+
 ### Artigos (`/articles`)
+
+<div align="center">
 
 | Método | Endpoint        | Protegido? | Descrição                     |
 |--------|------------------|------------|-------------------------------|
@@ -135,7 +149,11 @@ central-critica-fullstack/
 | PUT    | /:slug           | Sim        | Edita artigo (autor)          |
 | DELETE | /:slug           | Sim        | Exclui artigo (autor)         |
 
+</div>
+
 ### Proxy para API do TMDB
+
+<div align="center">
 
 | Método | Endpoint                         | Protegido? | Descrição                          |
 |--------|-----------------------------------|------------|-------------------------------------|
@@ -145,6 +163,8 @@ central-critica-fullstack/
 | GET    | /genres/movie                    | Não        | Gêneros de filmes                  |
 | GET    | /genres/tv                       | Não        | Gêneros de séries                  |
 | GET    | /search                          | Não        | Pesquisa geral por mídia           |
+
+</div>
 
 ---
 
