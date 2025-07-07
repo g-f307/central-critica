@@ -1,7 +1,7 @@
 # Central Crítica - Aplicação Full-Stack
 
 <p align="center">
-  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=GREEN&style=for-the-badge"/>
 </p>
 
 <p align="center">
@@ -18,19 +18,19 @@ Projeto desenvolvido na disciplina de Desenvolvimento WEB, do curso Análise e D
 
 ---
 
-## ❓ JUSTIFICATIVA
+## ❓ Justificativa
 
-* O audiovisual é uma área que abrange diversos segmentos bastante complexos entre si. O que torna cada um tão rico é a diversidade de culturas, ideias e visões que são implementadas em obras e disseminadas publicamente. Portanto, uma plataforma web para o convívio social que reúna os segmentos mais vistosos globalmente (filmes e séries) é uma demanda super atual, com direcionamento diverso e um fator de inclusão que rompe barreiras de um gosto específico.
-
----
-
-## 👥 PÚBLICO-ALVO
-
-* Amantes da arte, entretenimento e cultura pop que buscam aprofundar suas experiências com filmes e séries através de análises críticas e reflexivas. O conteúdo abrange desde iniciantes até consumidores mais experientes.
+O audiovisual é uma área que abrange diversos segmentos bastante complexos entre si. O que torna cada um tão rico é a diversidade de culturas, ideias e visões que são implementadas em obras e disseminadas publicamente. Portanto, uma plataforma web para o convívio social que reúna os segmentos mais vistosos globalmente (filmes e séries) é uma demanda super atual, com direcionamento diverso e um fator de inclusão que rompe barreiras de um gosto específico.
 
 ---
 
-## ✨ FUNCIONALIDADES PRINCIPAIS
+## 👥 Público-Alvo
+
+Amantes da arte, entretenimento e cultura pop que buscam aprofundar suas experiências com filmes e séries através de análises críticas e reflexivas. O conteúdo abrange desde iniciantes até consumidores mais experientes.
+
+---
+
+## ✨ Funcionalidades Principais
 
 ### Navegação e Descoberta de Conteúdo
 
@@ -61,9 +61,7 @@ Projeto desenvolvido na disciplina de Desenvolvimento WEB, do curso Análise e D
 
 ---
 
-## 🚀 TECNOLOGIAS UTILIZADAS
-
-<div align="center">
+## 🚀 Tecnologias Utilizadas
 
 | Categoria  | Tecnologia           | Descrição |
 |------------|----------------------|-----------|
@@ -81,11 +79,9 @@ Projeto desenvolvido na disciplina de Desenvolvimento WEB, do curso Análise e D
 | API Externa| TMDB API             | Dados de filmes e séries |
 | Controle   | Git & GitHub         | Versionamento de código |
 
-</div>
-
 ---
 
-## 📂 ESTRUTURA DO PROJETO
+## 📂 Estrutura do Projeto
 
 ```
 central-critica-fullstack/
@@ -110,11 +106,9 @@ central-critica-fullstack/
 
 ---
 
-## 🔌 ENDPOINTS DA API BACKEND
+## 🔌 Endpoints da API Backend
 
 ### Autenticação (`/auth`)
-
-<div align="center">
 
 | Método | Endpoint           | Protegido? | Descrição                          |
 |--------|--------------------|------------|------------------------------------|
@@ -123,11 +117,7 @@ central-critica-fullstack/
 | GET    | /google            | Não        | Início OAuth                       |
 | GET    | /google/callback   | Não        | Callback do Google                 |
 
-</div>
-
 ### Críticas (`/reviews`)
-
-<div align="center">
 
 | Método | Endpoint                        | Protegido? | Descrição                             |
 |--------|----------------------------------|------------|----------------------------------------|
@@ -135,11 +125,7 @@ central-critica-fullstack/
 | GET    | /:mediaType/:mediaId             | Não        | Críticas de uma mídia específica       |
 | GET    | /my-reviews/all                  | Sim        | Críticas do usuário logado             |
 
-</div>
-
 ### Artigos (`/articles`)
-
-<div align="center">
 
 | Método | Endpoint        | Protegido? | Descrição                     |
 |--------|------------------|------------|-------------------------------|
@@ -149,11 +135,7 @@ central-critica-fullstack/
 | PUT    | /:slug           | Sim        | Edita artigo (autor)          |
 | DELETE | /:slug           | Sim        | Exclui artigo (autor)         |
 
-</div>
-
 ### Proxy para API do TMDB
-
-<div align="center">
 
 | Método | Endpoint                         | Protegido? | Descrição                          |
 |--------|-----------------------------------|------------|-------------------------------------|
@@ -164,11 +146,9 @@ central-critica-fullstack/
 | GET    | /genres/tv                       | Não        | Gêneros de séries                  |
 | GET    | /search                          | Não        | Pesquisa geral por mídia           |
 
-</div>
-
 ---
 
-## 🛠 COMO RODAR O PROJETO LOCALMENTE
+## 🛠 Como Rodar o Projeto Localmente
 
 ### Pré-requisitos
 
@@ -180,8 +160,8 @@ central-critica-fullstack/
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/g-f307/central-critica.git
-cd central-critica
+git clone <url_do_repositorio>
+cd central-critica-fullstack
 ```
 
 ### 2. Configurar o Backend
@@ -227,7 +207,7 @@ npm install
 
 ---
 
-## 🖼 SCREENSHOTS
+## 🖼 Screenshots
 
 > Adicione imagens aqui:
 
@@ -239,7 +219,7 @@ npm install
 
 ---
 
-## 📚 REFERÊNCIAS
+## 📚 Referências
 
 - [Google Identity Overview](https://developers.google.com/identity/gsi/web/guides/overview)
 - [TMDB API Documentation](https://developer.themoviedb.org/docs)
