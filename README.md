@@ -20,13 +20,13 @@ Projeto desenvolvido na disciplina de Desenvolvimento WEB, do curso Análise e D
 
 ## ❓ JUSTIFICATIVA
 
-O audiovisual é uma área que abrange diversos segmentos bastante complexos entre si. O que torna cada um tão rico é a diversidade de culturas, ideias e visões que são implementadas em obras e disseminadas publicamente. Portanto, uma plataforma web para o convívio social que reúna os segmentos mais vistosos globalmente (filmes e séries) é uma demanda super atual, com direcionamento diverso e um fator de inclusão que rompe barreiras de um gosto específico.
+* O audiovisual é uma área que abrange diversos segmentos bastante complexos entre si. O que torna cada um tão rico é a diversidade de culturas, ideias e visões que são implementadas em obras e disseminadas publicamente. Portanto, uma plataforma web para o convívio social que reúna os segmentos mais vistosos globalmente (filmes e séries) é uma demanda super atual, com direcionamento diverso e um fator de inclusão que rompe barreiras de um gosto específico.
 
 ---
 
 ## 👥 PÚBLICO-ALVO
 
-Amantes da arte, entretenimento e cultura pop que buscam aprofundar suas experiências com filmes e séries através de análises críticas e reflexivas. O conteúdo abrange desde iniciantes até consumidores mais experientes.
+* Amantes da arte, entretenimento e cultura pop que buscam aprofundar suas experiências com filmes e séries através de análises críticas e reflexivas. O conteúdo abrange desde iniciantes até consumidores mais experientes.
 
 ---
 
