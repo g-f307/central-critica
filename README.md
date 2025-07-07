@@ -160,8 +160,8 @@ central-critica-fullstack/
 ### 1. Clonar o Repositório
 
 ```bash
-git clone <url_do_repositorio>
-cd central-critica-fullstack
+git clone https://github.com/g-f307/central-critica.git
+cd central-critica
 ```
 
 ### 2. Configurar o Backend
