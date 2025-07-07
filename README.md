@@ -214,6 +214,18 @@ npm install
 ## 🖼 SCREENSHOTS
 
 > Adicione imagens aqui:
+![Captura de tela de 2025-07-06 22-29-34](https://github.com/user-attachments/assets/e023b65b-c185-4219-ba48-383177b4a6f4)
+![Captura de tela de 2025-07-06 22-29-46](https://github.com/user-attachments/assets/e20c7a19-64c7-4299-8ccc-69a0d70a8042)
+![Captura de tela de 2025-07-06 22-30-01](https://github.com/user-attachments/assets/0363dc93-6bca-40a5-83dc-2cf9272e58fe)
+![Captura de tela de 2025-07-06 22-31-47](https://github.com/user-attachments/assets/59b26f4d-7bdd-4ff6-b63a-ab68960385c3)
+![Captura de tela de 2025-07-06 22-31-22](https://github.com/user-attachments/assets/3ff9f055-d124-488a-b08e-3d609d396acd)
+![Captura de tela de 2025-07-06 22-31-08](https://github.com/user-attachments/assets/53d24815-c194-4039-b940-913242a7eccc)
+![Captura de tela de 2025-07-06 22-30-59](https://github.com/user-attachments/assets/8dbb124f-c8f1-4c1a-a451-df7a1a936d0d)
+![Captura de tela de 2025-07-06 22-30-42](https://github.com/user-attachments/assets/611d9164-c2c0-4ff2-9737-23c2f17e958e)
+![Captura de tela de 2025-07-06 22-30-35](https://github.com/user-attachments/assets/cdc1a040-c14e-4f70-93c7-e9e783b53a94)
+![Captura de tela de 2025-07-06 22-30-23](https://github.com/user-attachments/assets/5b289409-62e1-4c9b-8fe3-11b0b37f1077)
+
+
 
 - Página Inicial
 - Página de Filmes com Filtros
