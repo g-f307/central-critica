@@ -250,6 +250,8 @@ npm install
 </p>
 <p align="center"><i>Editor de texto para criação de artigos</i></p>
 
+---
+
 ## 📚 REFERÊNCIAS
 
 - [Google Identity Overview](https://developers.google.com/identity/gsi/web/guides/overview)
