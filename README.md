@@ -213,27 +213,42 @@ npm install
 
 ## 🖼 SCREENSHOTS
 
-> Adicione imagens aqui:
-![Captura de tela de 2025-07-06 22-29-34](https://github.com/user-attachments/assets/e023b65b-c185-4219-ba48-383177b4a6f4)
-![Captura de tela de 2025-07-06 22-29-46](https://github.com/user-attachments/assets/e20c7a19-64c7-4299-8ccc-69a0d70a8042)
-![Captura de tela de 2025-07-06 22-30-01](https://github.com/user-attachments/assets/0363dc93-6bca-40a5-83dc-2cf9272e58fe)
-![Captura de tela de 2025-07-06 22-31-47](https://github.com/user-attachments/assets/59b26f4d-7bdd-4ff6-b63a-ab68960385c3)
-![Captura de tela de 2025-07-06 22-31-22](https://github.com/user-attachments/assets/3ff9f055-d124-488a-b08e-3d609d396acd)
-![Captura de tela de 2025-07-06 22-31-08](https://github.com/user-attachments/assets/53d24815-c194-4039-b940-913242a7eccc)
-![Captura de tela de 2025-07-06 22-30-59](https://github.com/user-attachments/assets/8dbb124f-c8f1-4c1a-a451-df7a1a936d0d)
-![Captura de tela de 2025-07-06 22-30-42](https://github.com/user-attachments/assets/611d9164-c2c0-4ff2-9737-23c2f17e958e)
-![Captura de tela de 2025-07-06 22-30-35](https://github.com/user-attachments/assets/cdc1a040-c14e-4f70-93c7-e9e783b53a94)
-![Captura de tela de 2025-07-06 22-30-23](https://github.com/user-attachments/assets/5b289409-62e1-4c9b-8fe3-11b0b37f1077)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e023b65b-c185-4219-ba48-383177b4a6f4" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/5b289409-62e1-4c9b-8fe3-11b0b37f1077" width="45%"/>
+  
+</p>
+<p align="center"><i>Página Inicial e alternância para o modo escuro</i></p>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e20c7a19-64c7-4299-8ccc-69a0d70a8042" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/803c16c9-44c7-405a-b6c0-5fa221e77e13" width="45%"/>
+</p>
+<p align="center"><i>Segmento em alta com opção de alternância</i></p>
 
+<p align="center">
+ <img src="https://github.com/user-attachments/assets/2fc1652f-ee80-40ae-9baf-778edd6d99f0" width="45%"/>
+ <img src="https://github.com/user-attachments/assets/3ff9f055-d124-488a-b08e-3d609d396acd" width="45%"/>
+</p>
+<p align="center"><i>Tela de Autenticação</i></p>
 
-- Página Inicial
-- Página de Filmes com Filtros
-- Modal de Detalhes
-- Página de Autenticação
-- Editor de Artigos
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2ea63c46-0568-4c37-bebc-24e310753812" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/cdc1a040-c14e-4f70-93c7-e9e783b53a94" width="45%"/>
+</p>
+<p align="center"><i>Visualização de página dedicada por tipo de mídia (Filmes como exemplar)</i></p>
 
----
+<p align="center">
+ <img src="https://github.com/user-attachments/assets/dfc994cd-3649-4db0-a615-7b70819efafe" width="45%"/>
+ <img src="https://github.com/user-attachments/assets/8dbb124f-c8f1-4c1a-a451-df7a1a936d0d" width="45%"/>
+</p>
+<p align="center"><i>Página de Artigos e Visualização de Artigo</i></p>
+
+<p align="center">
+ <img src="https://github.com/user-attachments/assets/c23f64bc-b146-4647-a18a-d52ea90d99a1" width="45%"/>
+ <img src="https://github.com/user-attachments/assets/59b26f4d-7bdd-4ff6-b63a-ab68960385c3" width="45%"/>
+</p>
+<p align="center"><i>Editor de texto para criação de artigos</i></p>
 
 ## 📚 REFERÊNCIAS
 
