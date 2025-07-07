@@ -63,6 +63,8 @@ Amantes da arte, entretenimento e cultura pop que buscam aprofundar suas experi�
 
 ## 🚀 Tecnologias Utilizadas
 
+<div align="center">
+
 | Categoria  | Tecnologia           | Descrição |
 |------------|----------------------|-----------|
 | Frontend   | React (com Vite)     | Interface com build moderno |
@@ -78,6 +80,8 @@ Amantes da arte, entretenimento e cultura pop que buscam aprofundar suas experi�
 |            | JWT & Passport.js    | Autenticação e OAuth |
 | API Externa| TMDB API             | Dados de filmes e séries |
 | Controle   | Git & GitHub         | Versionamento de código |
+
+</div>
 
 ---
 
